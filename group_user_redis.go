@@ -35,7 +35,6 @@ func GetUserInfoFromRedis(pubkey string) *UserInfoDTO {
 	return &userInfo
 }
 
-// GetUserInfo4Cache 获取用户信息
 func GetUserInfo4Cache(pubkey string) (*UserInfo4Cache, error) {
 	var userInfo UserInfo4Cache
 	err := HGetJSON(UserInfoRedisKey, pubkey, &userInfo)

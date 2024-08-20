@@ -1,38 +1,7 @@
 package main
 
 import (
-	"github.com/nbd-wtf/go-nostr"
-	"github.com/sideshow/apns2"
-)
-
-var (
-	clientMap = make(map[string]*apns2.Client)
-
-	// 创建推送服务工厂
-	factory = &PusherFactory{}
-
-	// 创建安卓和iOS推送服务
-	androidPusher, _ = factory.CreatePusher(Android)
-	iosPusher, _     = factory.CreatePusher(IOS)
-
-	// 创建推送管理器
-	pushManager *PushManager
-
-	eventChannel         chan HanlderEventInfo
-	groupRelayChannel    chan HanlderEventInfo
-	monentChannel        chan HanlderEventInfo
-	inviteToGroupChannel chan HanlderEventInfo
-
-	GroupRelayChannelKinds = []int{
-		nostr.KindSimpleGroupChatMessage,
-		nostr.KindSimpleGroupThread,
-		nostr.KindSimpleGroupReply,
-		nostr.KindSimpleGroupMetadata,
-		nostr.KindSimpleGroupMembers}
-
-	MonmentChannelKinds = []int{
-		nostr.KindTextNote,
-		nostr.KindReaction}
+	"os"
 )
 
 func init() {
@@ -43,39 +12,62 @@ func init() {
 }
 
 func main() {
+	env := os.Getenv("RUN_ENV")
 
-	// 初始化推送管理
+	if env == "" {
+		log.Println("环境变量 RUN_ENV 未设置或为空")
+		return
+	} else {
+		log.Printf("环境变量 RUN_ENV 的值:%s\n", env)
+	}
+
+	relays := []MonitoringRelaysInfo{}
+	configName := "config.json"
+	relaysFileName := "relays.txt"
+
+	isTest := false
+
+	if env != "pro" {
+		isTest = true
+	}
+
+	log.Printf("isTest:%t\n", isTest)
+	if isTest {
+		configName = "config_test.json"
+		relaysFileName = "relays_test.txt"
+	}
+
+	// Initialize push management
 	pushManager = NewPushManager(androidPusher, iosPusher)
 
-	// 读取配置文件
-	err := ReadConfig("config.json")
+	// Reading configuration files
+	err := ReadConfig(configName)
 	if err != nil {
 		log.Printf("Error reading config file: %v", err)
 	}
 
-	// 用于ios推送的
-	InitClientMap()
+	// For ios push
+	go InitClientMap()
 
-	oxchat_group_subscribeKinds := []SubKindsLimit{
-		{SubscribeKinds: []int{9, 11, 12, 9000}, Limit: 0},
-		{SubscribeKinds: []int{39000, 39002}, Limit: 1},
-	}
+	ReadRelaysFile(relaysFileName)
 
-	oxchat_subscribeKinds := []SubKindsLimit{
-		{SubscribeKinds: []int{1059, 42}, Limit: 0},
-	}
+	if isTest {
+		relays = []MonitoringRelaysInfo{
+			{RelayUrl: "ws://127.0.0.1:6970", SubKindsLimits: Oxchat_subscribeKinds, GroupRelayFlag: false},
+			{RelayUrl: "ws://127.0.0.1:5577", SubKindsLimits: Oxchat_group_subscribeKinds, GroupRelayFlag: true},
+		}
+	} else {
+		needMonitorRelays := GetMonitorChatRelays(config.TopInfo.TopN)
+		for _, relay := range needMonitorRelays {
+			relays = append(relays, MonitoringRelaysInfo{RelayUrl: relay, SubKindsLimits: Oxchat_subscribeKinds, GroupRelayFlag: false})
+		}
 
-	//连接到各个relay服务
-	relays := []MonitoringRelaysInfo{
-		// {RelayUrl: "wss://relay.0xchat.com", SubscribeKinds: []int{42, 1059}, isGroupRelay: false},
-		// {RelayUrl: "wss://groups.0xchat.com", SubscribeKinds: []int{39000, 39002}},
-		{RelayUrl: "ws://127.0.0.1:5578", SubKindsLimits: oxchat_subscribeKinds, GroupRelayFlag: false},
-		// {RelayUrl: "ws://127.0.0.1:5577", SubscribeKinds: []int{39000, 39002}, Limit: 1},
-		{RelayUrl: "ws://127.0.0.1:5577", SubKindsLimits: oxchat_group_subscribeKinds, GroupRelayFlag: true},
-		// Add more instances as needed
+		relays = append(relays, MonitoringRelaysInfo{RelayUrl: Group_Relay_0xchat, SubKindsLimits: Oxchat_group_subscribeKinds, GroupRelayFlag: false})
 	}
 
 	go ConnectToInitRelays(relays)
+
+	go SendHeartbeat()
 
 	go HandleEvent(eventChannel)
 
@@ -85,8 +77,8 @@ func main() {
 
 	go InviteToGroupEvent(inviteToGroupChannel)
 
-	// 捕获中断信号并优雅地关闭连接
-	go HandleInterrupt(clients)
+	// Capture the interrupt signal and gracefully close the connection
+	go HandleInterrupt()
 
 	// Prevent the main function from exiting
 	select {}

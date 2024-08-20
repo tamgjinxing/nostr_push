@@ -1,6 +1,9 @@
 package main
 
-import "github.com/nbd-wtf/go-nostr"
+import (
+	"github.com/gorilla/websocket"
+	"github.com/nbd-wtf/go-nostr"
+)
 
 type MemberDTO struct {
 	ChannelId         string `json:"channelId"`
@@ -39,4 +42,27 @@ type GroupInfo struct {
 	// GroupPic  string `json:"groupPic"`
 	GroupType   string `json:"groupType"`
 	GroupStatus string `json:"groupStatus"`
+}
+
+type HanlderEventInfo struct {
+	Event  *nostr.Event
+	Client *WebSocketClient
+}
+
+type SubKindsLimit struct {
+	SubscribeKinds []int
+	Limit          int
+}
+
+type MonitoringRelaysInfo struct {
+	RelayUrl       string
+	SubKindsLimits []SubKindsLimit
+	GroupRelayFlag bool
+}
+
+type WebSocketClient struct {
+	Conn               *websocket.Conn
+	Challenge          string
+	AuthedPublicKey    string
+	MonitorgRelaysInfo *MonitoringRelaysInfo
 }

@@ -4,35 +4,12 @@ import (
 	"encoding/json"
 	"os"
 	"os/signal"
+	"sync"
 	"time"
 
 	"github.com/gorilla/websocket"
 	"github.com/nbd-wtf/go-nostr"
 )
-
-type HanlderEventInfo struct {
-	Event  *nostr.Event
-	Client *WebSocketClient
-}
-
-type SubKindsLimit struct {
-	SubscribeKinds []int
-	Limit          int
-}
-
-type MonitoringRelaysInfo struct {
-	RelayUrl       string
-	SubKindsLimits []SubKindsLimit
-	GroupRelayFlag bool
-}
-
-// WebSocketClient 结构体包含 WebSocket 连接
-type WebSocketClient struct {
-	Conn               *websocket.Conn
-	Challenge          string
-	AuthedPublicKey    string
-	MonitorgRelaysInfo *MonitoringRelaysInfo
-}
 
 // NewWebSocketClient 创建新的 WebSocketClient 实例并连接到 WebSocket 服务
 func NewWebSocketClient(monitorRelayInfo *MonitoringRelaysInfo) (*WebSocketClient, error) {
@@ -48,12 +25,14 @@ func NewWebSocketClient(monitorRelayInfo *MonitoringRelaysInfo) (*WebSocketClien
 	return client, nil
 }
 
-// SendMessage 发送消息到 WebSocket 连接
 func (c *WebSocketClient) SendMessage(message string) error {
 	return c.Conn.WriteMessage(websocket.TextMessage, []byte(message))
 }
 
-// ReceiveMessage 接收来自 WebSocket 连接的消息
+func (c *WebSocketClient) SendPing() error {
+	return c.Conn.WriteMessage(websocket.PingMessage, nil)
+}
+
 func (c *WebSocketClient) ReceiveMessage() {
 	defer c.Conn.Close()
 
@@ -66,20 +45,32 @@ func (c *WebSocketClient) ReceiveMessage() {
 	}
 }
 
-// SendHeartbeat 定期发送心跳消息
-func (c *WebSocketClient) SendHeartbeat(interval time.Duration) {
-	ticker := time.NewTicker(interval)
+func SendHeartbeat() {
+	ticker := time.NewTicker(10 * time.Second)
 	defer ticker.Stop()
+
 	for range ticker.C {
-		err := c.SendMessage("ping")
-		if err != nil {
-			log.Printf("Failed to send heartbeat to %s: %v", c.MonitorgRelaysInfo.RelayUrl, err)
-			return
+		go SendPingAndReconnect()
+	}
+}
+
+func SendPingAndReconnect() {
+	mu.RLock() //add read lock
+	defer mu.RUnlock()
+
+	if len(clientsMap) > 0 {
+		for _, client := range clientsMap {
+			err := client.SendMessage("ping")
+			if err != nil {
+				log.Printf("Failed to send heartbeat to %s: %v", client.MonitorgRelaysInfo.RelayUrl, err)
+				mu.RUnlock()
+				ConnectToInitRelays([]MonitoringRelaysInfo{*client.MonitorgRelaysInfo})
+				mu.RLock()
+			}
 		}
 	}
 }
 
-// Close 关闭 WebSocket 连接
 func (c *WebSocketClient) Close() {
 	c.Conn.Close()
 }
@@ -93,7 +84,6 @@ func (c *WebSocketClient) HandlerMessage(message []byte) {
 		log.Printf("Error unmarshaling JSON: %v", err)
 	}
 
-	// Unmarshal the type
 	var eventType string
 	err = json.Unmarshal(rawMessage[0], &eventType)
 	if err != nil {
@@ -137,7 +127,6 @@ func (c *WebSocketClient) HandlerMessage(message []byte) {
 			log.Printf("generateAuthMsg failed:%v\n", err)
 		}
 
-		log.Printf("authMsg:%s\n", authMsg)
 		err = c.SendMessage(authMsg)
 		if err != nil {
 			log.Printf("send auth msg to relay:%s failed.authMsg=:%s", c.MonitorgRelaysInfo.RelayUrl, authMsg)
@@ -145,57 +134,67 @@ func (c *WebSocketClient) HandlerMessage(message []byte) {
 	}
 }
 
-// HandleInterrupt 捕获中断信号，优雅地关闭 WebSocket 连接
-func HandleInterrupt(clients []*WebSocketClient) {
+func HandleInterrupt() {
 	interrupt := make(chan os.Signal, 1)
 	signal.Notify(interrupt, os.Interrupt)
 	<-interrupt
 
 	log.Println("Interrupt signal received, closing connections...")
-	for _, client := range clients {
-		client.Close()
+	for _, value := range clientsMap {
+		value.Close()
 	}
 	os.Exit(0)
 }
 
+// ConnectToInitRelays connects to all relays and initializes clients.
 func ConnectToInitRelays(relays []MonitoringRelaysInfo) {
-	// 连接到所有 WebSocket 服务
+	var wg sync.WaitGroup
+	semaphore := make(chan struct{}, 10)
+
 	for _, relay := range relays {
-		client, err := NewWebSocketClient(&relay)
-		if err != nil {
-			log.Printf("Failed to connect to WebSocket server %s: %v", relay.RelayUrl, err)
-			continue
-		}
+		wg.Add(1)
+		semaphore <- struct{}{}
 
-		client.MonitorgRelaysInfo = &relay
-		clients = append(clients, client)
-	}
+		go func(relay MonitoringRelaysInfo) {
+			defer wg.Done()
+			defer func() { <-semaphore }()
 
-	// 启动接收消息的 goroutine
-	for _, client := range clients {
-		go client.ReceiveMessage()
-		go client.SendHeartbeat(10 * time.Second) // 每10秒发送一次心跳
-
-		go func(c *WebSocketClient) {
-			SubKindsLimits := c.MonitorgRelaysInfo.SubKindsLimits
-			if len(SubKindsLimits) > 0 {
-				for _, subKindsLimit := range SubKindsLimits {
-					subId := GenerateRandomString(32)
-					filters := map[string]interface{}{
-						"kinds": subKindsLimit.SubscribeKinds,
-						"limit": subKindsLimit.Limit,
-					}
-					reqMsg := GenerateSubscribeMsg(subId, filters)
-					err := c.SendMessage(reqMsg)
-					if err != nil {
-						log.Printf("Failed to send message to %s: %v", c.MonitorgRelaysInfo.RelayUrl, err)
-					} else {
-						log.Printf("Sent message to %s: %s\n", c.MonitorgRelaysInfo.RelayUrl, reqMsg)
-					}
-				}
+			client, err := NewWebSocketClient(&relay)
+			if err != nil {
+				log.Printf("Failed to connect to WebSocket server %s: %v", relay.RelayUrl, err)
+				return
 			}
 
-			select {}
-		}(client)
+			log.Printf("Connected to %s successfully!", relay.RelayUrl)
+
+			clients = append(clients, client)
+			clientsMap[relay.RelayUrl] = client
+
+			go client.ReceiveMessage()
+
+			go func(c *WebSocketClient) {
+				SubKindsLimits := c.MonitorgRelaysInfo.SubKindsLimits
+				if len(SubKindsLimits) > 0 {
+					for _, subKindsLimit := range SubKindsLimits {
+						subId := GenerateRandomString(32)
+						filters := map[string]interface{}{
+							"kinds": subKindsLimit.SubscribeKinds,
+							"limit": subKindsLimit.Limit,
+						}
+						reqMsg := GenerateSubscribeMsg(subId, filters)
+						err := c.SendMessage(reqMsg)
+						if err != nil {
+							log.Printf("Failed to send message to %s: %v", c.MonitorgRelaysInfo.RelayUrl, err)
+						} else {
+							log.Printf("Sent message to %s: %s\n", c.MonitorgRelaysInfo.RelayUrl, reqMsg)
+						}
+					}
+				}
+				select {}
+			}(client)
+		}(relay)
 	}
+
+	wg.Wait()
+	log.Println("All relays have been initialized and clients are connected.")
 }

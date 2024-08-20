@@ -29,11 +29,6 @@ var (
 	redisDBNum int
 )
 
-// "address": "52.76.210.159:6379",
-// "password": "cc6ee5619d1b",
-// "db": 0
-
-// GetRedisClient 获取 Redis 客户端连接实例
 func GetRedisClient() (*redis.Client, error) {
 
 	var err error
@@ -42,14 +37,12 @@ func GetRedisClient() (*redis.Client, error) {
 		redisPwd = config.Redis.Password
 		redisDBNum = 0
 
-		// 创建 Redis 客户端连接
 		redisCli = redis.NewClient(&redis.Options{
 			Addr:     redisAddr,
 			Password: redisPwd,
 			DB:       redisDBNum,
 		})
 
-		// 检查是否能够连接到 Redis
 		_, err = redisCli.Ping(ctx).Result()
 		if err != nil {
 			fmt.Printf("failed to connect to Redis: %v\n", err)
@@ -60,51 +53,39 @@ func GetRedisClient() (*redis.Client, error) {
 	return redisCli, err
 }
 
-// Set 设置键值对
 func SetRedisKey(key, value string) error {
-	// 获取 Redis 客户端连接实例
 	redisCli, err := GetRedisClient()
 	if err != nil {
 		return err
 	}
 
-	// 设置键值对
 	return redisCli.Set(ctx, key, value, 0).Err()
 }
 
-// Get 获取键值对
 func GetRedisByKey(key string) (string, error) {
-	// 获取 Redis 客户端连接实例
 	redisCli, err := GetRedisClient()
 	if err != nil {
 		return "", err
 	}
 
-	// 获取键值对
 	return redisCli.Get(ctx, key).Result()
 }
 
-// Del 删除键
 func DelRedisByKey(key string) error {
-	// 获取 Redis 客户端连接实例
 	redisCli, err := GetRedisClient()
 	if err != nil {
 		return err
 	}
 
-	// 删除键
 	return redisCli.Del(ctx, key).Err()
 }
 
-// Close 关闭 Redis 客户端连接
 func Close() error {
-	// 获取 Redis 客户端连接实例
 	redisCli, err := GetRedisClient()
 	if err != nil {
 		return err
 	}
 
-	// 关闭 Redis 客户端连接
 	return redisCli.Close()
 }
 
@@ -114,7 +95,6 @@ func SetRedisKeyByList(key string, values ...interface{}) error {
 		return err
 	}
 
-	// 设置键值对
 	return redisCli.RPush(ctx, key, values).Err()
 }
 
@@ -168,7 +148,6 @@ func GetJSON(key string, dest interface{}) error {
 	return json.Unmarshal([]byte(data), dest)
 }
 
-// putJSON 将结构体序列化为 JSON 并存储到 Redis 中
 func PutJSON(key string, value interface{}) error {
 	redisCli, err := GetRedisClient()
 	if err != nil {
@@ -189,7 +168,6 @@ func PutJSON(key string, value interface{}) error {
 	return nil
 }
 
-// putHashList 将列表序列化为 JSON 并存储到 Redis 哈希表的特定字段中
 func PutHashList(key, field string, list []string) error {
 	redisCli, err := GetRedisClient()
 	if err != nil {
@@ -210,7 +188,6 @@ func PutHashList(key, field string, list []string) error {
 	return nil
 }
 
-// getHashList 从 Redis 哈希表的特定字段中获取 JSON 并反序列化为列表
 func GetHashList(key, field string) ([]string, error) {
 	redisCli, err := GetRedisClient()
 	if err != nil {
@@ -231,23 +208,20 @@ func GetHashList(key, field string) ([]string, error) {
 	return list, nil
 }
 
-// SaveRecentKey 保存最近 100 个键
 func SaveRecentKey(key string) error {
 	redisCli, err := GetRedisClient()
 	if err != nil {
 		return err
 	}
 
-	// 使用事务保证原子性
 	_, err = redisCli.TxPipelined(ctx, func(pipe redis.Pipeliner) error {
-		pipe.LPush(ctx, "recent_keys", key)   // 将新键推入列表头部
-		pipe.LTrim(ctx, "recent_keys", 0, 99) // 保留列表中的前 100 个键
+		pipe.LPush(ctx, "recent_keys", key)
+		pipe.LTrim(ctx, "recent_keys", 0, 99)
 		return nil
 	})
 	return err
 }
 
-// 判断这个键最近是否有保存过
 func RecentKeysExist(key string) (bool, error) {
 	redisCli, err := GetRedisClient()
 	if err != nil {
@@ -269,7 +243,6 @@ func RecentKeysExist(key string) (bool, error) {
 	return false, nil
 }
 
-// 模糊删除以 prefix 开头的 Redis 键
 func DeleteKeysWithPrefix(prefix string) error {
 	redisCli, err := GetRedisClient()
 	if err != nil {
@@ -286,12 +259,6 @@ func DeleteKeysWithPrefix(prefix string) error {
 			return err
 		}
 
-		// if len(keys) > 0 {
-		// 	for _, key := range keys {
-		// 		log.Printf("Key:%s", key)
-		// 	}
-		// }
-
 		if len(keys) > 0 {
 			if err := redisCli.Del(ctx, keys...).Err(); err != nil {
 				return err
@@ -303,6 +270,6 @@ func DeleteKeysWithPrefix(prefix string) error {
 			break
 		}
 	}
-	fmt.Printf("Deleted %d keys with prefix %s\n", n, prefix)
+	log.Printf("Deleted %d keys with prefix %s\n", n, prefix)
 	return nil
 }

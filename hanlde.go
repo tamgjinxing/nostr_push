@@ -90,9 +90,6 @@ func SaveGroupRelayGroupMembers(event *nostr.Event) {
 			tag0 := tag[0]
 			tag1 := tag[1]
 
-			// log.Printf("tag0:%s", tag[0])
-			// log.Printf("tag1:%s\n", tag[1])
-
 			if tag0 == "d" {
 				groupId = tag1
 			}
@@ -113,7 +110,6 @@ func SaveGroupRelayGroupInfo(event *nostr.Event) {
 
 	groupId := ""
 	groupName := ""
-	// groupPic := ""
 	groupType := ""
 	groupStatus := ""
 
@@ -122,9 +118,6 @@ func SaveGroupRelayGroupInfo(event *nostr.Event) {
 			tag0 := tag[0]
 			tag1 := tag[1]
 
-			// log.Printf("tag0:%s", tag[0])
-			// log.Printf("tag1:%s\n", tag[1])
-
 			if tag0 == "d" {
 				groupId = tag1
 			}
@@ -132,10 +125,6 @@ func SaveGroupRelayGroupInfo(event *nostr.Event) {
 			if tag0 == "name" {
 				groupName = tag1
 			}
-
-			// if tag0 == "picture" {
-			// 	groupPic = tag1
-			// }
 		}
 
 		if len(tag) == 1 {
@@ -150,9 +139,8 @@ func SaveGroupRelayGroupInfo(event *nostr.Event) {
 	}
 
 	groupInfo := GroupInfo{
-		GroupId:   groupId,
-		GroupName: groupName,
-		// GroupPic:  groupPic,
+		GroupId:     groupId,
+		GroupName:   groupName,
 		GroupType:   groupType,
 		GroupStatus: groupStatus,
 	}
@@ -169,8 +157,6 @@ func ChannelPush(event *nostr.Event) {
 	if len(tags) > 0 {
 		for _, tag := range tags {
 			if len(tag) > 2 {
-				// log.Println(tag)
-
 				if tag[0] == "e" {
 					groupId = tag[1]
 				}
@@ -181,7 +167,6 @@ func ChannelPush(event *nostr.Event) {
 	if groupId != "" {
 		channelInfo, _ := GetChannelInfoFromRedis(groupId)
 		members, _ := GetMembersFromRedis(groupId)
-
 		userInfo4Cache, _ := GetUserInfo4Cache(event.PubKey)
 		var wg sync.WaitGroup
 		for _, value := range members {
@@ -199,11 +184,10 @@ func ChannelPush(event *nostr.Event) {
 			userInfo := GetUserInfoFromRedis(value.UserPubKey)
 
 			if userInfo != nil {
-				// 对切片进行排序
 				sort.Ints(userInfo.Kinds)
 				_, found := slices.BinarySearch(userInfo.Kinds, nostr.KindChannelMessage)
-				log.Printf("found:%t\n", found)
-				if found {
+				groupFound := StringInSlice(userInfo.ETags, groupId)
+				if found && groupFound {
 					if channelInfo != nil {
 						go SendMessageToMember(userInfo, channelInfo.ChannelName, event.Content, &wg, event.ID, sendName)
 					} else {
@@ -252,7 +236,7 @@ func PrivatePush(event *nostr.Event) {
 	}
 
 	if !isNeedPush {
-		log.Println("1059的非25050消息,不进行推送!!!")
+		log.Println("Kind=1059 and K tag value isn't 25050, no need push!!!")
 		return
 	}
 
@@ -292,28 +276,36 @@ func PublicGroupPush(event *nostr.Event) {
 		}
 
 		for _, member := range members {
+			log.Println(member)
 			if member == event.PubKey {
-				log.Printf("发送人自己不需要推送，pubkey=:%s", member)
+				log.Printf("The event is send by self,is no need push. pubkey=:%s", member)
 				continue
 			}
 
 			userInfo := GetUserInfoFromRedis(member)
 
-			if userInfo.Online == 0 && userInfo.DeviceId != "" {
-				message := event.Content
-				userInfo4Cache, _ := GetUserInfo4Cache(event.PubKey)
-				if userInfo4Cache != nil {
-					if userInfo4Cache.Name != "" {
-						message = userInfo4Cache.Name + ":" + message
+			if userInfo != nil {
+				sort.Ints(userInfo.Kinds)
+				_, found := slices.BinarySearch(userInfo.Kinds, event.Kind)
+				groupFound := StringInSlice(userInfo.ETags, groupId)
+				if found && groupFound {
+					if userInfo.Online == 0 && userInfo.DeviceId != "" {
+						message := event.Content
+						userInfo4Cache, _ := GetUserInfo4Cache(event.PubKey)
+						if userInfo4Cache != nil {
+							if userInfo4Cache.Name != "" {
+								message = userInfo4Cache.Name + ":" + message
+							}
+						}
+
+						title := groupInfo.GroupName
+						if title == "" {
+							title = Default_push_title
+						}
+
+						pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, groupId)
 					}
 				}
-
-				title := groupInfo.GroupName
-				if title == "" {
-					title = Default_push_title
-				}
-
-				pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, groupId)
 			}
 		}
 	}
@@ -326,8 +318,6 @@ func MonmentPush(event *nostr.Event) {
 	sendMsg := ""
 	defaultReplyMsg := fmt.Sprintf(Default_reply_msg, "someone")
 	defaultLikeMsg := fmt.Sprintf(Default_like_msg, "someone")
-
-	var matchKinds []int
 
 	if len(tags) > 0 {
 		for _, tag := range tags {
@@ -348,23 +338,22 @@ func MonmentPush(event *nostr.Event) {
 
 	if event.Kind == nostr.KindTextNote {
 		sendMsg = defaultReplyMsg
-		matchKinds = MONENT_REPLY_PUSH_KINDS
 	} else if event.Kind == nostr.KindReaction {
 		sendMsg = defaultLikeMsg
-		matchKinds = MONEMT_LIKE_PUSH_KINDS
 	}
 
 	toPubkeys = RemoveDuplicates(toPubkeys)
 	for _, toPubkey := range toPubkeys {
 		if toPubkey == event.PubKey {
-			log.Printf("被回复的人恰好是回复的人，不需要推送")
+			log.Printf("The person being replied to is the same as the person replying, no need to push a notification.")
 			continue
 		}
 
-		log.Printf("被回复的人，需要推送的用户pubkey:%s\n", toPubkey)
+		log.Printf("The person being replied to is the user who needs to receive a notification. pubkey:%s\n", toPubkey)
 		userInfo := GetUserInfoFromRedis(toPubkey)
 		if userInfo != nil {
-			match := AnyMatch(matchKinds, userInfo.Kinds)
+			sort.Ints(userInfo.Kinds)
+			_, match := slices.BinarySearch(userInfo.Kinds, event.Kind)
 			if match {
 				if userInfo.Online == 0 && userInfo.DeviceId != "" {
 					pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, sendMsg, userInfo.DeviceId, "0xchat", false, "")
@@ -403,7 +392,7 @@ func InviteToGroupHandler(handleEventInfo HanlderEventInfo) {
 						"kinds": []int{39000, 39002},
 						"#d":    []string{groupId},
 					}
-					log.Println("接收到邀请入群通知，发送获取群基本信息和群成员订阅获取群信息和成员列表！")
+					log.Println("Upon receiving an invitation to join the group, send a request to get basic group information and subscribe to retrieve the group details and member list!")
 					reqMsg := GenerateSubscribeMsg(subId, filters)
 					err := client.SendMessage(reqMsg)
 					if err != nil {
@@ -417,7 +406,6 @@ func InviteToGroupHandler(handleEventInfo HanlderEventInfo) {
 	}
 }
 
-// SendMessageToMember 模拟发送消息给单个成员的函数
 func SendMessageToMember(userInfo *UserInfoDTO, groupName string, message string, wg *sync.WaitGroup, eventId string, sendName string) {
 	defer wg.Done()
 	if userInfo.Online == 0 && userInfo.DeviceId != "" {
@@ -434,4 +422,13 @@ func SendMessageToMember(userInfo *UserInfoDTO, groupName string, message string
 
 		pushManager.PushMessage(eventId+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, "")
 	}
+}
+
+func StringInSlice(list []string, a string) bool {
+	for _, b := range list {
+		if b == a {
+			return true
+		}
+	}
+	return false
 }

@@ -1,26 +1,19 @@
 {
-    "RelayInfo":{
-        "databasePath": "./db2",
-        "port": "5578",
-        "domain": "relay.0xchat.com",
-        "name":"relay.0xchat.com",
-        "pubkey":"a19d53de6fb2e04b16ad90a50b36fbccbea2d656fdf5c0629368d690e87bbeb8",
-        "description":"0xchat relay",
-        "contact":"support@0xchat.com",
-        "icon":""
-    },
     "IosPushInfo":{
-        "BundleIds":"com.0xchat.app",
-        "P12Pathes":"0xchat_push.p12",
-        "Passwords":"123"
+        "BundleIds":"",
+        "P12Pathes":"",
+        "Passwords":""
     },
     "Redis": {
-        "address": "127.0.0.1:6379",
-        "password": "abc123",
+        "address": "",
+        "password": "",
         "db": 0
     },
     "PushBotInfo":{
-        "publicKey":"029895ebfa38932dfcc79594471da5471f91baccddcaa03df3e0135f232432af",
-        "privateKey":"ef73ee0bed3c7adcc68d98c0ba4fc5ccfb342ecadce2904badc99b3fc10ee35f"
+        "publicKey":"",
+        "privateKey":""
+    },
+    "TopInfo":{
+        "topN":1
     }
 }

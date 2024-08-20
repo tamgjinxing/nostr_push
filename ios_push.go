@@ -10,6 +10,7 @@ import (
 )
 
 func InitClientMap() {
+	log.Println("Begin Init APNS Client!!!")
 	bundleIds := config.IOSPushInfo.BundleIds
 	p12paths := config.IOSPushInfo.P12Pathes
 	passwords := config.IOSPushInfo.Passwords
@@ -21,6 +22,7 @@ func InitClientMap() {
 	for i := 0; i < len(bundleArr); i++ {
 		AddClient(bundleArr[i], p12Arr[i], passwordArr[i])
 	}
+	log.Println("Init APNS Client Successful!!!")
 }
 
 // AddClient adds a new APNs client to the map
@@ -62,7 +64,7 @@ func PushIos(deviceToken string, title, message string) error {
 
 	notification := &apns2.Notification{}
 	notification.Topic = iosPushInitDTO.BundleId
-	notification.Payload = payload.NewPayload().AlertTitle(title).AlertBody(message)
+	notification.Payload = payload.NewPayload().AlertTitle(title).AlertBody(message).Badge(1)
 	notification.DeviceToken = iosPushInitDTO.DeviceToken
 
 	res, err := client.Push(notification)

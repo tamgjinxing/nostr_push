@@ -1,0 +1,19 @@
+{
+    "IosPushInfo":{
+        "BundleIds":"com.0xchat.app",
+        "P12Pathes":"0xchat_push.p12",
+        "Passwords":"123"
+    },
+    "Redis": {
+        "address": "127.0.0.1:6379",
+        "password": "abc123",
+        "db": 0
+    },
+    "PushBotInfo":{
+        "publicKey":"029895ebfa38932dfcc79594471da5471f91baccddcaa03df3e0135f232432af",
+        "privateKey":"ef73ee0bed3c7adcc68d98c0ba4fc5ccfb342ecadce2904badc99b3fc10ee35f"
+    },
+    "TopInfo":{
+        "topN":20
+    }
+}

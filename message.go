@@ -6,12 +6,10 @@ import (
 	"time"
 )
 
-// 生成指定长度的随机16进制的字符串
+// Generates a random hexadecimal string of the specified length
 func GenerateRandomString(length int) string {
-	// 定义字符集合
 	charset := "ABCDEFabcdef0123456789"
 
-	// 生成随机字符串
 	randomString := make([]byte, length)
 	for i := range randomString {
 		randomString[i] = charset[rand.New(rand.NewSource(time.Now().UnixNano())).Intn(len(charset))]
@@ -20,7 +18,6 @@ func GenerateRandomString(length int) string {
 	return string(randomString)
 }
 
-// 生成relay的订阅信息（req）
 // reqId reqId
 func GenerateSubscribeMsg(reqId string, filters map[string]interface{}) string {
 	jsonMap := make(map[string]interface{})
@@ -32,26 +29,26 @@ func GenerateSubscribeMsg(reqId string, filters map[string]interface{}) string {
 
 	jsonString, err := json.Marshal(jsonArray)
 	if err != nil {
-		return "" // 返回空字符串或者其他错误处理逻辑
+		return ""
 	}
 
 	return string(jsonString)
 }
 
-// 生成退订消息
+// Generate an unsubscribe message
 func GenerateUnSubscribeMsg(reqId string) string {
 	jsonArray := []interface{}{"CLOSE", reqId}
 
 	jsonString, err := json.Marshal(jsonArray)
 	if err != nil {
-		return "" // 返回空字符串或者其他错误处理逻辑
+		return ""
 	}
 
 	return string(jsonString)
 }
 
 func GenerateAuthMsg(relay string, challenge string) (string, error) {
-	tags := make([]Tag, 0, 2) // 初始长度为0，容量为5
+	tags := make([]Tag, 0, 2)
 
 	iTag := []string{"relay", relay}
 	iTag2 := []string{"challenge", challenge}

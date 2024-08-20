@@ -1,0 +1,852 @@
+3:32PM DBG 环境变量 RUN_ENV 的值:pro
+
+3:32PM DBG isTest:false
+
+3:32PM DBG 加载配置文件:config.json
+
+3:32PM DBG Begin Init APNS Client!!!
+
+3:32PM DBG Init APNS Client Successful!!!
+
+3:32PM DBG Connected to wss://groups.0xchat.com successfully!
+3:32PM DBG All relays have been initialized and clients are connected111.
+
+3:32PM DBG Sent message to wss://groups.0xchat.com: ["REQ","D74d3Aeaaef104b7deFDcb5bbfe9c9FE",{"kinds":[9,11,12,9000],"limit":0}]
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["AUTH","ffe4fe1728587ba1"]
+
+
+3:32PM DBG Sent message to wss://groups.0xchat.com: ["REQ","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kinds":[39000,39002],"limit":1}]
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","D74d3Aeaaef104b7deFDcb5bbfe9c9FE"]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"6f24d2bfe20a98cb8cbd7bd1e05cf155d8e1574e7ff9b36b9c188a9a2f2f4a02","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266666,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["p","85d5e49cc2c58a684069f67600bf3e9f640bba376b67675f37d4aa7f7a156b84"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","abe779de7c164aadcbbd933bb71dcf39ec3779771d678d7d732b03beedec7c58"],["p","8a8f565a69580fb90304d0f64af321c8660d85de9a14b8541c14514e0bf1c2fb"]],"content":"","sig":"4019c00fbe216712617501cd92204c7f667d18c43cffab7820186dc1d97d528e4bf35443add7803f1ab363e26c6ffb2db9095b8f35bdf34169650db243d3e63b"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"d09479780f5704bd331559f9474dff62c804d450c30cbe54efd509d8e40018cb","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"],["p","aaf092aabda3304cf5f5a5c8c0717795a34a7ab745a124eae07fc4820a8f04a3"],["p","8fc1b58dc95d5b3c2d6b2d70248e5e5fac507283971d5cd78696cfc4175385af"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"864744ca34b89da5bbf08bec9217a8f31e4b037e73bb0a253c5478f678d3e3837c73ce5c2dc02670a22f7966b39ef265c189e1d99e35113bbd98897e2d0cb884"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"217935c02389037452e7003862a9be57b1829473a92cda6c34339dfed7553b17","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266667,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["name","open"],["about","zbbxbx"],["public"],["open"]],"content":"","sig":"b68d4eed09d0a61492404582626175411a7e1fec0e18f96c6fb670dedf62c2be7b8266b5c0ddec08c4366d851703542238e40032644534d793beb4b7df3de858"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"c7420cf7a4411703147133a89a38630b9237338f070056bb90bbdf7261fa8bb8","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["name","123456"],["public"],["open"]],"content":"","sig":"dc10c790b950bbdaca490babb8d72c0f99ed67642e109d7560ab60698080035312cb21bd8f38ff9558e3d35e7887c8186d525f3a5fd53a3f7708de0d79e1f400"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"c52256c8db99f2cbca911782c816565c9f916c14b2713ebbb6e00b324677cf33","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505601,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["name","k01"],["public"],["open"]],"content":"","sig":"666737fbaa23f8faa8b2c20584ff65f5b088914dcf6cdc7541ab979f6aa6da03fc197ead22eeef9680876810cf91a0cfbbc5db18bb8049a25ea2f14c869ffb46"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"87cdca1afd7a63de309c31678fac75d39ea42351547e104f9192771f7ef36370","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505600,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["p","8cf9747066108ba65a59b0c8a94894edb0c1fcf90cb0c53cd2798b0879cec28d"]],"content":"","sig":"c57bc167bfdbbbbf63e4aec796d238eb59cc8837bb96e3c621b5167ff9786591a765af6012804c2839cf8e7a2bf006efb79e6f36723128a8d51401dfd5232647"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"8bfa7f1100a413c74596b133a4c7ec1425de6c6f75cfbdf34793a41fbfd5d26f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722707683,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["p","638384700918e6a472477045dbcc229362ac0e64a48d927c48af609a956b9348"]],"content":"","sig":"658a08b053bc24e706e9353dfa882d9259a50153ab545fc1906db9b52d4b22d5b10b862bfb5f920ce5099d965a7c235b23c83c63340fcab333c73baa771a9f4f"}]
+
+
+failed to connect to Redis: ERR invalid password
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"589621e1c574f5afe1cdf19053a31b4dd3922ffd2f73c983ffde0d966496d626","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393338,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"cde54aa4337838ab267960ec79ceb8024ee03bcdc594fee73c4764c256ccd9122cfac6a72bbcffad20bf399447b2ed2df958163f1b5e9901386b94d49d4ac019"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"e4139f780759eba392fc50d7a864993c175b42378633741624551a40ecb527b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722714605,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["name","Bitcoinlighthouse"],["about","Selbsthilfegruppe für anonyme Bitcoiner"],["public"],["open"]],"content":"","sig":"01dc2eeb2b298954b77172c72c448fe0caf2ecf3fd388253dfcf9210a11e6e3f75db699b1da65fe0191028b98f6f46eeaf1bcf8ecb9ca8ecc541e330bdafc7ed"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"91bdf5b98d96c81e3e6ba808fc7d5a0702a44e63bb9089fcf5ab040306f626b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393470,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["name","哈哈"],["public"],["closed"]],"content":"","sig":"8852984fdb46c9bb3e0360f65acace4a174bf61a9a50aedc743559b6f73149779e4b0297a34c998bafc882e81c9ad59befb3731e9fe0b6009a3bd40e25008831"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"489befce3455a8c541b931c71745d165821c43f7a1e310384fc884e07416db05","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"d946f99c8bfe0e39ccbdeace1f5ba3ce12ef416c43346a7cff2262b61acc9e510199784f2426e8098eabc20f718137e5f44e75d38b4d1480986e351e8b9dcc36"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"ac25ac7489883696306316bde5067498b40991b64b67c7a8060a3850e42d57e4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5ee5b30ca96e740884efabd81870bacd12cf1d7ef67987ef20215de925f106cd5279ea53974f3c2705dd52032846f3c7fee8ce6f6c1bec7c668c2e6dd783603f"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"0974987c982370f551d7057cf948ebe8f52a7a1ffeff480c0f1976a7aba807d0","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936555,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["p","9e71a8407e5e3ff7fe0a7d370099a75fb8725f7e1d5a6b9323a22159af88b130"]],"content":"","sig":"da6d93806fef66b47649ded3be7d44023feb863932a99f93e039dd596e14724518af7aecee523cfb550d21468d44f8453e2647b5f333ae2bbe15489b50a241a0"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"3e87cd3ff4dd3a9c66b58f09a510caa7f8d52b8fc94244a0b906eaafd2639b95","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["p","4840d58e81bf835d01db0d2dc43bc5e1e16e3dfef2b674821dfaa0031a8cc00e"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"]],"content":"","sig":"d124dbeec37fe24e209b457f7287818b9bdded85804aab7b48808bad84ef4baa4f9fb77c3bbddf88992fac059b758dd8585e1f4edf656a3a76945f56f6c653e9"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"bf0c8d5a04e528bcdc5f53ec5081d23ff1089b11a32daecd5b8815a642874c68","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936556,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["name","Spring"],["public"],["open"]],"content":"","sig":"afa535ef023627bd806af4575dc1d87126a920ba49ba633f6265dfac1777e245fe153a438ad85fcef6ffa1c05144b71ce7c26f9d56d96cbb00aa21863a92684f"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"d111d653e511cb8393896e7bd47c63c7fefed3a310adc6cf419f2621bc31048a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["name","07261203open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/07261203open1721966599503_avatar01.png"],["public"],["open"]],"content":"","sig":"bfd1d608c2634cf03f1dc598019323b1a30bdee8bc775047c778a535f0a509233b721c61e5ddf0bea001eb73d71592215352bdaff591b160e72b8be5569eb95f"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"a64a04bd731ed549b6a5dce0edaaf164d2aad8c373c230c7a55a55e932ebec39","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["name","TestOpenGroup"],["public"],["open"]],"content":"","sig":"06e268603bd2cdb79865f3087464f561e35707d865ebdee3c02b417688b753920bb29544746d0fc71b7410e21086256e89b5bd47adbbe353c23d4e03d8bbfc95"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"8c345fb92647b40a9099cf6dce4de14809191d3447aafded4ff1607caf33c4f4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["p","75a4f515d60478a10d2ab1655e37269399c31454a3c88c8815b228a9cda2aad1"],["p","f2f63b82ff9ea16f82636df41ea534e47556d42b4890da3b1a71b4655b31f683"]],"content":"","sig":"d8c9ff375e217259ff23660bf7ad6e225bacce61be2a9d8c935a238b580de2310c7ee4f19a9fee0203197fb66a3319acfd0b6152f4e2e3eece1aabf4de3104d8"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"a1a9230c48aa059fb4524ba532faf3da17d6f58e70b2befc323a197d1442df9a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["p","37c10448a0fd9295d166100dcd80b01f52f3cc70c98431a89f480fc9f8256861"]],"content":"","sig":"8aefb6186b75143d1569a1fde5e128b4fc2e9b90bed9b9082e03f60eb02c94bfc8a996e2359c336d89dea0670fbc3c23e26efbf2b9e58aee10f6ec297e8457db"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"522c83e8e552b04900d33fbb44e57fcee40fe8a8a009ab5ebe86335745de7261","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242443,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"92c1e1db2373a8c0a418894a381b556664cd0c5847c63fc87776126b16119822b761fdfe4d2b377e1e7502ce521c51d44ca1bedbe6b95c4dfd8345195e84d51c"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"bd69aea3167baa1358f641edaeb9bdff274f14beb105e671d7f0d8f497121a62","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["name","Test group on 0xchat"],["public"],["open"]],"content":"","sig":"f2c5c8b3cf5d210822d2ffdb10089d57d06e9a731621703f9411a2c0f5eca2dfdb4f72cf46d0126763c93ba482221d8f3113e7c39a847a7d3bfc173597ad5c59"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"0642dd8b786f9fdeccedc0f956a3ec8552320088dfa95f6dcd4d15581990edda","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242458,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["name","huhuh "],["about","huhbsbbshbas"],["public"],["open"]],"content":"","sig":"925e14c0615d795648086261a645221674b070d4fe6795c0ebbd32b4fa1ef06dd9daadd3ba95d277084b4b876d32b30d5a0f67e9e5f600bff1a43f74ef7d4b3f"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"92f28095b4bdc1ee57a7e882351eae0bdf8d36e760087593f7f3d72816934dd3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393366,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["name","0xChat closed"],["public"],["closed"]],"content":"","sig":"226232daab99e5e5d821820f820b18a9ee6a610ecd361d3132cb4e87d12a4ee14be7728567e2f8568f1551c170abf5af8493d9a0eefe79fd7f4d37b9d88cfb9b"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"3ec7625fa91d27ee1bd164b6dbd2f742f90764e1492c37d6098762ba4f7ab3a3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393106,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["p","df73973dc294a4599eefa5f9668a714300196f0057ed3bd84298404d2b4a3e68"]],"content":"","sig":"3ab677fe161c2db4d8da862581c142082ac205322eaf62a1cd6232f7545060e326f2b22e6c9720592b8fd64ecdb1dcfe230cec3c57de0654d81d5486fbf70b69"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"7c0df5ecd22ba0ca9df6de8ae9755f9b19df743d77ae8121abc6d0fb9fd46ee8","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722044488,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","8d7e9c016e78dc20e48a7c384cf9123642a5c35fb833b0fb1515cd93ca12555c"],["p","cbe68b7a159910baeb01db478d4531da512c04f969aef49d810e84da5ddd3540"],["p","8634b238fe84b6ebc3ffdd96e83672c9e9dc3233e2720627fa7e3aad114bebe2"],["p","2a0c61087537df00b9aac2b6f03fd056bbccdeb8766873caff1f5ef98f39d340"],["p","6e0a1f4852bc8fa42b8047d60a81930d88904ca3f2acdfb5b8413ab8c9f444e5"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","34651a9392d34bf9d064e39f3c10beef74b5e28e710c07324317b687c4abd7e8"],["p","30471668d33668c9d756e8907714bdbfe72d8b146e953f07cf60a5ed8db9df6f"],["p","0ca69fed2b6a3e794263c4166f2a8b442253b2623b6788e938c74b9c607da600"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"]],"content":"","sig":"30668a0aeaf722951014846e24e041741d8ed9e31a066b4b521f101170150ca788b6d1ca6b8925d4363fe8c564bbd10f7ef39df63ce70c17d61381499f5b2408"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"8fc074542fcf503d5dedfabbd9d315c8014e622747ec11c977951c2f7cdb7d06","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848754,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["p","0d97beae567fcec9c6574f1c6ef6126ea969d4992c3198e51c0fac52c5274a14"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","73c6bb92440a9344279f7a36aa3de1710c9198b1e9e8a394cd13e0dd5c994c63"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","bb47f0ccc58c69d21f1d2ae9452f70b67410db19e16dfe8369e5d52bf619aa1d"],["p","edcaf10182a45f9c1feafb5f066e0bc0e8c8935bd3382a718d73a0bbf87281c3"],["p","82fbb08c8ef45c4d71c88368d0ae805bc62fb92f166ab04a0b7a0c83d8cbc29a"],["p","c7617e02242f5853fe5b513d411f19b44ad3f0da95a28d33a9b7e927f255dd2d"],["p","ffd375eb40eb486656a028edbc83825f58ff0d5c4a1ba22fe7745d284529ed08"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"],["p","ff6c2abc19e9d694182c19366cddd942779f7b567076ad2ad011fa5839c0761a"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","ef76ae01ce09837665408dbc87ed575c235035c66cfc9495f4dfcbe2e1f11a4e"],["p","d8881295f6442dc93481f888ddb5e74aeaaddac9457e2fb7bd09e68f4d5c8db7"],["p","2efaa715bbb46dd5be6b7da8d7700266d11674b913b8178addb5c2e63d987331"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","0da3e84567ac1e7f4155d4b979a66e24d8742a583e7706d96a4daaa377cc7ada"],["p","5a5cb2234053beac5c0e16fc5330300c2a2d0ea30da2bbd0379fb6aab8aff065"]],"content":"","sig":"57de36c2f3778cc0b23583baefe6abb0e028e74f388d704ea2b5e1b96f0d5d501f8e9398c7721bbdb7af2a91fca99904c0a03fb998213af6b2720eb684e9a538"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"db801a6a8c1bef1f6e3617cb3741eaf44362cf3135ffd3be399c75d733dbc080","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723078251,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["name","Nostr After Dark"],["about","Dark Occultists of Nostr "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/1722043448872_avatar01.png"],["public"],["open"]],"content":"","sig":"afc9a05e8fe69ea7f45f2b36dc486897ce6e7dcbc8be1d235077127186073192344f68507ca12137b3c6fc51399b5668d9b1aec21c95aac21eac2e62672fdd26"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"f5ee09c66362171b94cc3d183ee242dc3111fed1f3ea292d83fdf25ce7a80a2b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848871,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["name","bullishNuts Group (Open)"],["about","Public group to chat about the bullishNuts PWA or Cashu in general. "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/bullishNuts1721848743920_avatar01.png"],["public"],["open"]],"content":"","sig":"739670098aac3e6123d0633b4b8ad79929e9e0a6186713a29c931bdddb5f07c5b848b05d1192986bce4eafca8ff09941c0e8a9eb79c7e008c5665046e8483a47"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"f36d48ed0078b1c7375eaaf3a843441db77bb0798ec12d7c7dcd472084c6b55f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796169,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["name","xingGroup"],["public"],["open"]],"content":"","sig":"ea0c50d928edf22e478efbbaef8a10b754b243b426d5fe7dc9c379c62b8221e147f9f8f76d21fa94a84a2721b9402dbaab06b4fd160721bddac05507e7208197"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"2deb4c22a74fffad186c921615356f96f1191fae27d5bd0e0f45997a0f39946b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796168,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"34b57cdbcb05ac18cabd3eb9bc19fa7fb5a9424ea5c5639cc4c3073b42b8765ad465ef8603545f7c9f4340f477d42f8fd8601ea64ed4a855ceb67b2982b6a098"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"211448fee53c458a840879b84a85294e9a141a2f712cff383e1cb445f9b55f09","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5be3ed2e01b0900b42cf73cdfd46802641a7c3a05a3d3d56faf8e52aeaff00705aff10deb58a4a738eb69278ee78d0633bbf6b3d2395b1bbb307bd9cbef7711d"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"51eacadad11125b544f5dedc7695610706df4358d1f06eab5ecc080420ebe8a2","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441385,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["p","4dbfcb7c5ddb8249f9c7eb8c21e019f08fbfb7ec5ded5408b614590beb8d1695"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"]],"content":"","sig":"41dbb33560ce376752152d6606c436075e162b8323024d0eba1e69d8abb807b2d15bc8aad265ca8b9739879dce4746514740f140c1076350c93f2ee956b5a4f3"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"431ccfbdb4d95a9486b7076f045031fe1e5eeb4109353c06855059806bff77db","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"ae3047fec4da5abf58102758fd04070d93e15a3988f078a92cb3c2b5a5aa711cba65fdba53dc3feb8e3b366819ab16883f3d8345ebacd8e871a44629295a5851"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"cb450661d6dd4f2225dbf36e57fc88f9b573b6b6f3a044362149e1f1861812bb","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441386,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["name","FreedomTechCommunity"],["about","This channel helps people break free from the tyrannical grasps of Big Brother, Silicon Valley and Big Tech."],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/FreedomTechCommunity1722441372066_avatar01.png"],["public"],["open"]],"content":"","sig":"f431dbbc0d375376e7f5336a8ac43bf0e66b39cb2b85d884f4c717f48b20bf9966d7e01796069367a9916e128a4e1f36ba0f84977c277032d9d9d3998e2d6e1b"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"0819d99c672051ecac0a32af4ab3d181c10129511e483a35caeb1a4916038b8f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["name","~~"],["about","~~~"],["public"],["open"]],"content":"","sig":"d3933543a36e7d55910d5a1cc6868ab160cc1d41045951caf9525db7322e1f2abaf72a59e59b4175d2ce7db7b4324c7d4fafed97fdb2b5b3cdbc80a2a4e25c8b"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"18c9a96535c60627f6dc3ca7092cdb5d01d4070278badfe9d6218b6a417ebd2e","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["p","da95ee16ab5eb8876cccb7fe71aa6eaa674dd49a531d641727accc7cbbb2a39c"]],"content":"","sig":"081c186c47857a6eee50fe8fa32db162cecf3e1aa5ce81f3151c08c9a0581f2f5d70ec9294f6aa82008424ee8c25a6b2b1ef3d744cec36b358f87ba6ea06ce28"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"caee45bf66a09918ad987ee7a14c006d0e3cda49f8da0e0d1968c64ddad3b1ce","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721818256,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"]],"content":"","sig":"19f77230a68b44d019e559f8694f908a427dddb7a613edda250530fba6ffc7e1be48e264b67071b40accc40fde749823f0cd647092a6af74e000d0d5e1f1cd1e"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"e0330a9641a4ec7243a5370df7e3b854fd65d5b93e95dbbf87962666ce47c38a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393492,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"3a062a37c468fdae822724c660ef91b1f9fe7c4339bf0a02db7f6efd5d25f590f2072b171020a47cca1ba5f5013b3e8ea458f6b432a12f8d146e368ec13a0c69"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"5e4fe29420122b76b6d4fb2da49d3ca7d05bc30861dcbbea890846dd6efba468","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721819044,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["name","0xchat Community Group "],["public"],["open"]],"content":"","sig":"5d7c6ec4c8dc8c1d05865934057a441dc92543a385f4d679226ec681e7f3098c3df947bc9bcce239ecc8149bf97f0ec187b0e98f25a0a1f69070d32fc2a5abb3"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"6636f9ed5628d9d5b7394f2f266bf78f7d443dbd6f6a833930a305833adfc09d","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393493,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["name","我的小"],["public"],["open"]],"content":"","sig":"dc2838763c0324f851de66aa0e101f0046bc4b8bd5f0c7f914ad6368aa9501f7df53f5851fbf441e518d131bc7750fd665b57e8acd67caa0b1db1384483c96a7"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"6b15742b836d8cc17055a71f859c71799e4472b29059d287553239d5693ed5dc","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721962530,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["name","testinggroup001"],["public"],["closed"]],"content":"","sig":"91cbe33326e1041cf24f823ad5bcc5cee00d2d3d3cacdc590df0554032417a604453866f589721353e60d7bab4cbe0d62ef157b440b0b0e23c1a6bfec2110074"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"a3c161f1d1648d5b891577cefe11cec58407ff40d909c977ca0b80e32d0f6fac","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810708,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["name","One Dream"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/One Dream1721810692720_avatar01.png"],["public"],["open"]],"content":"","sig":"616dd5e5cb8d7b086539f5e053ee456be3b3d0e87ec74735259530566d9ec69622d48794c6860833aa0d35beee385319cfca87c8bdeaaf2f05963041997caf02"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39000,"id":"1354ac354d36fb009209096b5d93ba4ca24bc5683db24a9596c79c333c6da53b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["name","看吧"],["public"],["open"]],"content":"","sig":"b6c04a55b33a11af14dfca261e73862493967230c1fe3cbabf328367f1266b8aa5848604c1c1977b7a9cc12ac638c819e96b8e697fef8b919b3c01c862579171"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"8d32fcdeb753ad55214534576794ec1ecb9e66096aa2df3ac86072da4c14bf82","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721960869,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"],["p","230b561bbf9799dcb978f1e95a36b18a7c6eeafbc661d39f8d138c06e81adcd0"]],"content":"","sig":"88cfa535ead8e3a0684e4b69099af9a76a107450b7f77f73716ed9f52700458ce48296c3188bafe2767b4f6c2e626a08b4e6080dc903bc483a8a34a6fbd2752a"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"3dfdcfb68bfd4c16d689ce13cd75605ede01c3d8d05a13f10c292c0f44c71bb4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810707,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"908907f2ec8888d3e832209b376c817e64e53e70a280c3e07e753ce6b77b8adde11548fc7a4447850032c6022047acfba9fb467ab0aed32ec6f0738574cb8f68"}]
+
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG ERR invalid password
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","75EBDCFaad75C5c6BFbdF144b1aaa197",{"kind":39002,"id":"34683a74d3a12375f6a48dd4aa9d0567ef91550dd9157a89f07d39cae2baea1f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["p","ddbfd04c6d2b63ecb17261d372b7b5a6429f453edd7387e72c4b31c6b86a5594"]],"content":"","sig":"15984f49f608de2700d4304bb3448bb39a3e37ea5cf3a4bb585227dd06102df544e41e86a1ba1dccb499002a71b2e1b04dd91241d43f32ec1e3a95b758e54fc6"}]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["OK","71fc5dfc4e6b3b17f97b00e2bbe0a56cbafe825d3ef0aa498eb4fbc76a974714",true,""]
+
+
+3:32PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","75EBDCFaad75C5c6BFbdF144b1aaa197"]
+
+
+3:32PM DBG ERR invalid password
+
+3:33PM DBG 环境变量 RUN_ENV 的值:pro
+
+3:33PM DBG isTest:false
+
+3:33PM DBG 加载配置文件:config.json
+
+3:33PM DBG Begin Init APNS Client!!!
+
+3:33PM DBG Init APNS Client Successful!!!
+
+3:33PM DBG Connected to wss://groups.0xchat.com successfully!
+3:33PM DBG All relays have been initialized and clients are connected111.
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["AUTH","be91b0ce40a435ae"]
+
+
+3:33PM DBG Sent message to wss://groups.0xchat.com: ["REQ","8C240d82BBbAf2C7FA1302de41F54FD3",{"kinds":[9,11,12,9000],"limit":0}]
+
+3:33PM DBG Sent message to wss://groups.0xchat.com: ["REQ","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kinds":[39000,39002],"limit":1}]
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","8C240d82BBbAf2C7FA1302de41F54FD3"]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"66f58cbf924020287da5de85ef7d7e5556858f8d60d5ce3a3b4c36041944bdc8","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266666,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["p","abe779de7c164aadcbbd933bb71dcf39ec3779771d678d7d732b03beedec7c58"],["p","8a8f565a69580fb90304d0f64af321c8660d85de9a14b8541c14514e0bf1c2fb"],["p","85d5e49cc2c58a684069f67600bf3e9f640bba376b67675f37d4aa7f7a156b84"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"9320175ce51253f6a00fd343ee4371be66743c62a28bea4a611e4ee001e9795d1f6de944695aab107431a4c315e2ac4e05ea6aee9704e7d2541a3d928937d29e"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"d09479780f5704bd331559f9474dff62c804d450c30cbe54efd509d8e40018cb","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"],["p","aaf092aabda3304cf5f5a5c8c0717795a34a7ab745a124eae07fc4820a8f04a3"],["p","8fc1b58dc95d5b3c2d6b2d70248e5e5fac507283971d5cd78696cfc4175385af"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"864744ca34b89da5bbf08bec9217a8f31e4b037e73bb0a253c5478f678d3e3837c73ce5c2dc02670a22f7966b39ef265c189e1d99e35113bbd98897e2d0cb884"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"217935c02389037452e7003862a9be57b1829473a92cda6c34339dfed7553b17","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266667,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["name","open"],["about","zbbxbx"],["public"],["open"]],"content":"","sig":"b68d4eed09d0a61492404582626175411a7e1fec0e18f96c6fb670dedf62c2be7b8266b5c0ddec08c4366d851703542238e40032644534d793beb4b7df3de858"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"c7420cf7a4411703147133a89a38630b9237338f070056bb90bbdf7261fa8bb8","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["name","123456"],["public"],["open"]],"content":"","sig":"dc10c790b950bbdaca490babb8d72c0f99ed67642e109d7560ab60698080035312cb21bd8f38ff9558e3d35e7887c8186d525f3a5fd53a3f7708de0d79e1f400"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"c52256c8db99f2cbca911782c816565c9f916c14b2713ebbb6e00b324677cf33","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505601,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["name","k01"],["public"],["open"]],"content":"","sig":"666737fbaa23f8faa8b2c20584ff65f5b088914dcf6cdc7541ab979f6aa6da03fc197ead22eeef9680876810cf91a0cfbbc5db18bb8049a25ea2f14c869ffb46"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"87cdca1afd7a63de309c31678fac75d39ea42351547e104f9192771f7ef36370","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505600,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["p","8cf9747066108ba65a59b0c8a94894edb0c1fcf90cb0c53cd2798b0879cec28d"]],"content":"","sig":"c57bc167bfdbbbbf63e4aec796d238eb59cc8837bb96e3c621b5167ff9786591a765af6012804c2839cf8e7a2bf006efb79e6f36723128a8d51401dfd5232647"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"8bfa7f1100a413c74596b133a4c7ec1425de6c6f75cfbdf34793a41fbfd5d26f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722707683,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["p","638384700918e6a472477045dbcc229362ac0e64a48d927c48af609a956b9348"]],"content":"","sig":"658a08b053bc24e706e9353dfa882d9259a50153ab545fc1906db9b52d4b22d5b10b862bfb5f920ce5099d965a7c235b23c83c63340fcab333c73baa771a9f4f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"589621e1c574f5afe1cdf19053a31b4dd3922ffd2f73c983ffde0d966496d626","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393338,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"cde54aa4337838ab267960ec79ceb8024ee03bcdc594fee73c4764c256ccd9122cfac6a72bbcffad20bf399447b2ed2df958163f1b5e9901386b94d49d4ac019"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"e4139f780759eba392fc50d7a864993c175b42378633741624551a40ecb527b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722714605,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["name","Bitcoinlighthouse"],["about","Selbsthilfegruppe für anonyme Bitcoiner"],["public"],["open"]],"content":"","sig":"01dc2eeb2b298954b77172c72c448fe0caf2ecf3fd388253dfcf9210a11e6e3f75db699b1da65fe0191028b98f6f46eeaf1bcf8ecb9ca8ecc541e330bdafc7ed"}]
+
+
+failed to connect to Redis: ERR invalid password
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"91bdf5b98d96c81e3e6ba808fc7d5a0702a44e63bb9089fcf5ab040306f626b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393470,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["name","哈哈"],["public"],["closed"]],"content":"","sig":"8852984fdb46c9bb3e0360f65acace4a174bf61a9a50aedc743559b6f73149779e4b0297a34c998bafc882e81c9ad59befb3731e9fe0b6009a3bd40e25008831"}]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"489befce3455a8c541b931c71745d165821c43f7a1e310384fc884e07416db05","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"d946f99c8bfe0e39ccbdeace1f5ba3ce12ef416c43346a7cff2262b61acc9e510199784f2426e8098eabc20f718137e5f44e75d38b4d1480986e351e8b9dcc36"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"ac25ac7489883696306316bde5067498b40991b64b67c7a8060a3850e42d57e4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5ee5b30ca96e740884efabd81870bacd12cf1d7ef67987ef20215de925f106cd5279ea53974f3c2705dd52032846f3c7fee8ce6f6c1bec7c668c2e6dd783603f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"0974987c982370f551d7057cf948ebe8f52a7a1ffeff480c0f1976a7aba807d0","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936555,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["p","9e71a8407e5e3ff7fe0a7d370099a75fb8725f7e1d5a6b9323a22159af88b130"]],"content":"","sig":"da6d93806fef66b47649ded3be7d44023feb863932a99f93e039dd596e14724518af7aecee523cfb550d21468d44f8453e2647b5f333ae2bbe15489b50a241a0"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"3e87cd3ff4dd3a9c66b58f09a510caa7f8d52b8fc94244a0b906eaafd2639b95","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["p","4840d58e81bf835d01db0d2dc43bc5e1e16e3dfef2b674821dfaa0031a8cc00e"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"]],"content":"","sig":"d124dbeec37fe24e209b457f7287818b9bdded85804aab7b48808bad84ef4baa4f9fb77c3bbddf88992fac059b758dd8585e1f4edf656a3a76945f56f6c653e9"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"bf0c8d5a04e528bcdc5f53ec5081d23ff1089b11a32daecd5b8815a642874c68","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936556,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["name","Spring"],["public"],["open"]],"content":"","sig":"afa535ef023627bd806af4575dc1d87126a920ba49ba633f6265dfac1777e245fe153a438ad85fcef6ffa1c05144b71ce7c26f9d56d96cbb00aa21863a92684f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"d111d653e511cb8393896e7bd47c63c7fefed3a310adc6cf419f2621bc31048a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["name","07261203open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/07261203open1721966599503_avatar01.png"],["public"],["open"]],"content":"","sig":"bfd1d608c2634cf03f1dc598019323b1a30bdee8bc775047c778a535f0a509233b721c61e5ddf0bea001eb73d71592215352bdaff591b160e72b8be5569eb95f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"a64a04bd731ed549b6a5dce0edaaf164d2aad8c373c230c7a55a55e932ebec39","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["name","TestOpenGroup"],["public"],["open"]],"content":"","sig":"06e268603bd2cdb79865f3087464f561e35707d865ebdee3c02b417688b753920bb29544746d0fc71b7410e21086256e89b5bd47adbbe353c23d4e03d8bbfc95"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"8c345fb92647b40a9099cf6dce4de14809191d3447aafded4ff1607caf33c4f4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["p","75a4f515d60478a10d2ab1655e37269399c31454a3c88c8815b228a9cda2aad1"],["p","f2f63b82ff9ea16f82636df41ea534e47556d42b4890da3b1a71b4655b31f683"]],"content":"","sig":"d8c9ff375e217259ff23660bf7ad6e225bacce61be2a9d8c935a238b580de2310c7ee4f19a9fee0203197fb66a3319acfd0b6152f4e2e3eece1aabf4de3104d8"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"a1a9230c48aa059fb4524ba532faf3da17d6f58e70b2befc323a197d1442df9a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["p","37c10448a0fd9295d166100dcd80b01f52f3cc70c98431a89f480fc9f8256861"]],"content":"","sig":"8aefb6186b75143d1569a1fde5e128b4fc2e9b90bed9b9082e03f60eb02c94bfc8a996e2359c336d89dea0670fbc3c23e26efbf2b9e58aee10f6ec297e8457db"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"522c83e8e552b04900d33fbb44e57fcee40fe8a8a009ab5ebe86335745de7261","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242443,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"92c1e1db2373a8c0a418894a381b556664cd0c5847c63fc87776126b16119822b761fdfe4d2b377e1e7502ce521c51d44ca1bedbe6b95c4dfd8345195e84d51c"}]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"bd69aea3167baa1358f641edaeb9bdff274f14beb105e671d7f0d8f497121a62","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["name","Test group on 0xchat"],["public"],["open"]],"content":"","sig":"f2c5c8b3cf5d210822d2ffdb10089d57d06e9a731621703f9411a2c0f5eca2dfdb4f72cf46d0126763c93ba482221d8f3113e7c39a847a7d3bfc173597ad5c59"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"0642dd8b786f9fdeccedc0f956a3ec8552320088dfa95f6dcd4d15581990edda","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242458,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["name","huhuh "],["about","huhbsbbshbas"],["public"],["open"]],"content":"","sig":"925e14c0615d795648086261a645221674b070d4fe6795c0ebbd32b4fa1ef06dd9daadd3ba95d277084b4b876d32b30d5a0f67e9e5f600bff1a43f74ef7d4b3f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"92f28095b4bdc1ee57a7e882351eae0bdf8d36e760087593f7f3d72816934dd3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393366,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["name","0xChat closed"],["public"],["closed"]],"content":"","sig":"226232daab99e5e5d821820f820b18a9ee6a610ecd361d3132cb4e87d12a4ee14be7728567e2f8568f1551c170abf5af8493d9a0eefe79fd7f4d37b9d88cfb9b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"3ec7625fa91d27ee1bd164b6dbd2f742f90764e1492c37d6098762ba4f7ab3a3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393106,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["p","df73973dc294a4599eefa5f9668a714300196f0057ed3bd84298404d2b4a3e68"]],"content":"","sig":"3ab677fe161c2db4d8da862581c142082ac205322eaf62a1cd6232f7545060e326f2b22e6c9720592b8fd64ecdb1dcfe230cec3c57de0654d81d5486fbf70b69"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"378f67a2c8753ab109361d09fc6f5d8af15fd0f63a7c23ea6a898858c81db6aa","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722044488,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["p","6e0a1f4852bc8fa42b8047d60a81930d88904ca3f2acdfb5b8413ab8c9f444e5"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","34651a9392d34bf9d064e39f3c10beef74b5e28e710c07324317b687c4abd7e8"],["p","30471668d33668c9d756e8907714bdbfe72d8b146e953f07cf60a5ed8db9df6f"],["p","0ca69fed2b6a3e794263c4166f2a8b442253b2623b6788e938c74b9c607da600"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","8d7e9c016e78dc20e48a7c384cf9123642a5c35fb833b0fb1515cd93ca12555c"],["p","cbe68b7a159910baeb01db478d4531da512c04f969aef49d810e84da5ddd3540"],["p","8634b238fe84b6ebc3ffdd96e83672c9e9dc3233e2720627fa7e3aad114bebe2"],["p","2a0c61087537df00b9aac2b6f03fd056bbccdeb8766873caff1f5ef98f39d340"]],"content":"","sig":"510b49b71667f2459c925fa5df8ba4b7be7699a92d046d70986f80b8bc7c419960b7025729e5c521cb44f6f6b5033205a89ca22b972da7d9aa3cbc0312c07a3b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"94c2583e8b5c72cf6a058d856362366b3e08db10f7fb09e13874013a90fe94e5","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848754,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["p","bb47f0ccc58c69d21f1d2ae9452f70b67410db19e16dfe8369e5d52bf619aa1d"],["p","edcaf10182a45f9c1feafb5f066e0bc0e8c8935bd3382a718d73a0bbf87281c3"],["p","82fbb08c8ef45c4d71c88368d0ae805bc62fb92f166ab04a0b7a0c83d8cbc29a"],["p","c7617e02242f5853fe5b513d411f19b44ad3f0da95a28d33a9b7e927f255dd2d"],["p","0d97beae567fcec9c6574f1c6ef6126ea969d4992c3198e51c0fac52c5274a14"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","73c6bb92440a9344279f7a36aa3de1710c9198b1e9e8a394cd13e0dd5c994c63"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","ff6c2abc19e9d694182c19366cddd942779f7b567076ad2ad011fa5839c0761a"],["p","ffd375eb40eb486656a028edbc83825f58ff0d5c4a1ba22fe7745d284529ed08"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"],["p","d8881295f6442dc93481f888ddb5e74aeaaddac9457e2fb7bd09e68f4d5c8db7"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","ef76ae01ce09837665408dbc87ed575c235035c66cfc9495f4dfcbe2e1f11a4e"],["p","5a5cb2234053beac5c0e16fc5330300c2a2d0ea30da2bbd0379fb6aab8aff065"],["p","2efaa715bbb46dd5be6b7da8d7700266d11674b913b8178addb5c2e63d987331"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","0da3e84567ac1e7f4155d4b979a66e24d8742a583e7706d96a4daaa377cc7ada"]],"content":"","sig":"31d57797f4051507dfa698040542fbb07e514d525d480c669035a725fc2bd79be17e10fa6378c870b2eb7a74ac1a1cf2c07f4022267f2846df79259d5d0fdb5b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"db801a6a8c1bef1f6e3617cb3741eaf44362cf3135ffd3be399c75d733dbc080","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723078251,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["name","Nostr After Dark"],["about","Dark Occultists of Nostr "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/1722043448872_avatar01.png"],["public"],["open"]],"content":"","sig":"afc9a05e8fe69ea7f45f2b36dc486897ce6e7dcbc8be1d235077127186073192344f68507ca12137b3c6fc51399b5668d9b1aec21c95aac21eac2e62672fdd26"}]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"f5ee09c66362171b94cc3d183ee242dc3111fed1f3ea292d83fdf25ce7a80a2b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848871,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["name","bullishNuts Group (Open)"],["about","Public group to chat about the bullishNuts PWA or Cashu in general. "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/bullishNuts1721848743920_avatar01.png"],["public"],["open"]],"content":"","sig":"739670098aac3e6123d0633b4b8ad79929e9e0a6186713a29c931bdddb5f07c5b848b05d1192986bce4eafca8ff09941c0e8a9eb79c7e008c5665046e8483a47"}]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"f36d48ed0078b1c7375eaaf3a843441db77bb0798ec12d7c7dcd472084c6b55f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796169,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["name","xingGroup"],["public"],["open"]],"content":"","sig":"ea0c50d928edf22e478efbbaef8a10b754b243b426d5fe7dc9c379c62b8221e147f9f8f76d21fa94a84a2721b9402dbaab06b4fd160721bddac05507e7208197"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"2deb4c22a74fffad186c921615356f96f1191fae27d5bd0e0f45997a0f39946b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796168,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"34b57cdbcb05ac18cabd3eb9bc19fa7fb5a9424ea5c5639cc4c3073b42b8765ad465ef8603545f7c9f4340f477d42f8fd8601ea64ed4a855ceb67b2982b6a098"}]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"211448fee53c458a840879b84a85294e9a141a2f712cff383e1cb445f9b55f09","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5be3ed2e01b0900b42cf73cdfd46802641a7c3a05a3d3d56faf8e52aeaff00705aff10deb58a4a738eb69278ee78d0633bbf6b3d2395b1bbb307bd9cbef7711d"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"51eacadad11125b544f5dedc7695610706df4358d1f06eab5ecc080420ebe8a2","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441385,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["p","4dbfcb7c5ddb8249f9c7eb8c21e019f08fbfb7ec5ded5408b614590beb8d1695"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"]],"content":"","sig":"41dbb33560ce376752152d6606c436075e162b8323024d0eba1e69d8abb807b2d15bc8aad265ca8b9739879dce4746514740f140c1076350c93f2ee956b5a4f3"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"431ccfbdb4d95a9486b7076f045031fe1e5eeb4109353c06855059806bff77db","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"ae3047fec4da5abf58102758fd04070d93e15a3988f078a92cb3c2b5a5aa711cba65fdba53dc3feb8e3b366819ab16883f3d8345ebacd8e871a44629295a5851"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"cb450661d6dd4f2225dbf36e57fc88f9b573b6b6f3a044362149e1f1861812bb","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441386,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["name","FreedomTechCommunity"],["about","This channel helps people break free from the tyrannical grasps of Big Brother, Silicon Valley and Big Tech."],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/FreedomTechCommunity1722441372066_avatar01.png"],["public"],["open"]],"content":"","sig":"f431dbbc0d375376e7f5336a8ac43bf0e66b39cb2b85d884f4c717f48b20bf9966d7e01796069367a9916e128a4e1f36ba0f84977c277032d9d9d3998e2d6e1b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"0819d99c672051ecac0a32af4ab3d181c10129511e483a35caeb1a4916038b8f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["name","~~"],["about","~~~"],["public"],["open"]],"content":"","sig":"d3933543a36e7d55910d5a1cc6868ab160cc1d41045951caf9525db7322e1f2abaf72a59e59b4175d2ce7db7b4324c7d4fafed97fdb2b5b3cdbc80a2a4e25c8b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"18c9a96535c60627f6dc3ca7092cdb5d01d4070278badfe9d6218b6a417ebd2e","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["p","da95ee16ab5eb8876cccb7fe71aa6eaa674dd49a531d641727accc7cbbb2a39c"]],"content":"","sig":"081c186c47857a6eee50fe8fa32db162cecf3e1aa5ce81f3151c08c9a0581f2f5d70ec9294f6aa82008424ee8c25a6b2b1ef3d744cec36b358f87ba6ea06ce28"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"29c64a5553de05fc68692d299489c5ab3ca0d9d95881947fd084c1a9dc416d8d","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721818256,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"]],"content":"","sig":"ee2ba4e02a60b704e604b629e1b2adcaa0d251d25a26a8e172ecdae68d83d863973a6b7e58ef787fa206e08557c76701fe0f24821c31a30a55505443360577c8"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"e0330a9641a4ec7243a5370df7e3b854fd65d5b93e95dbbf87962666ce47c38a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393492,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"3a062a37c468fdae822724c660ef91b1f9fe7c4339bf0a02db7f6efd5d25f590f2072b171020a47cca1ba5f5013b3e8ea458f6b432a12f8d146e368ec13a0c69"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"5e4fe29420122b76b6d4fb2da49d3ca7d05bc30861dcbbea890846dd6efba468","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721819044,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["name","0xchat Community Group "],["public"],["open"]],"content":"","sig":"5d7c6ec4c8dc8c1d05865934057a441dc92543a385f4d679226ec681e7f3098c3df947bc9bcce239ecc8149bf97f0ec187b0e98f25a0a1f69070d32fc2a5abb3"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"6636f9ed5628d9d5b7394f2f266bf78f7d443dbd6f6a833930a305833adfc09d","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393493,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["name","我的小"],["public"],["open"]],"content":"","sig":"dc2838763c0324f851de66aa0e101f0046bc4b8bd5f0c7f914ad6368aa9501f7df53f5851fbf441e518d131bc7750fd665b57e8acd67caa0b1db1384483c96a7"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"6b15742b836d8cc17055a71f859c71799e4472b29059d287553239d5693ed5dc","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721962530,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["name","testinggroup001"],["public"],["closed"]],"content":"","sig":"91cbe33326e1041cf24f823ad5bcc5cee00d2d3d3cacdc590df0554032417a604453866f589721353e60d7bab4cbe0d62ef157b440b0b0e23c1a6bfec2110074"}]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"a3c161f1d1648d5b891577cefe11cec58407ff40d909c977ca0b80e32d0f6fac","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810708,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["name","One Dream"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/One Dream1721810692720_avatar01.png"],["public"],["open"]],"content":"","sig":"616dd5e5cb8d7b086539f5e053ee456be3b3d0e87ec74735259530566d9ec69622d48794c6860833aa0d35beee385319cfca87c8bdeaaf2f05963041997caf02"}]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39000,"id":"1354ac354d36fb009209096b5d93ba4ca24bc5683db24a9596c79c333c6da53b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["name","看吧"],["public"],["open"]],"content":"","sig":"b6c04a55b33a11af14dfca261e73862493967230c1fe3cbabf328367f1266b8aa5848604c1c1977b7a9cc12ac638c819e96b8e697fef8b919b3c01c862579171"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"8d32fcdeb753ad55214534576794ec1ecb9e66096aa2df3ac86072da4c14bf82","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721960869,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"],["p","230b561bbf9799dcb978f1e95a36b18a7c6eeafbc661d39f8d138c06e81adcd0"]],"content":"","sig":"88cfa535ead8e3a0684e4b69099af9a76a107450b7f77f73716ed9f52700458ce48296c3188bafe2767b4f6c2e626a08b4e6080dc903bc483a8a34a6fbd2752a"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"3dfdcfb68bfd4c16d689ce13cd75605ede01c3d8d05a13f10c292c0f44c71bb4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810707,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"908907f2ec8888d3e832209b376c817e64e53e70a280c3e07e753ce6b77b8adde11548fc7a4447850032c6022047acfba9fb467ab0aed32ec6f0738574cb8f68"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E",{"kind":39002,"id":"34683a74d3a12375f6a48dd4aa9d0567ef91550dd9157a89f07d39cae2baea1f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["p","ddbfd04c6d2b63ecb17261d372b7b5a6429f453edd7387e72c4b31c6b86a5594"]],"content":"","sig":"15984f49f608de2700d4304bb3448bb39a3e37ea5cf3a4bb585227dd06102df544e41e86a1ba1dccb499002a71b2e1b04dd91241d43f32ec1e3a95b758e54fc6"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","AFc8ea5D2Eb41d2517B32DfaBEbbCB5E"]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["OK","41cc1db0a3916e58af9acf5cef17daa6046cb92bd864673e68fcf817a1531842",true,""]
+
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG ERR invalid password
+
+3:33PM DBG 环境变量 RUN_ENV 的值:pro
+
+3:33PM DBG isTest:false
+
+3:33PM DBG 加载配置文件:config.json
+
+3:33PM DBG Begin Init APNS Client!!!
+
+3:33PM DBG Init APNS Client Successful!!!
+
+3:33PM DBG Connected to wss://groups.0xchat.com successfully!
+3:33PM DBG All relays have been initialized and clients are connected111.
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["AUTH","81a05fe0940c4730"]
+
+
+3:33PM DBG Sent message to wss://groups.0xchat.com: ["REQ","886DD0bDA75D0FD14B9ACE6cBf8b0b4C",{"kinds":[9,11,12,9000],"limit":0}]
+
+3:33PM DBG Sent message to wss://groups.0xchat.com: ["REQ","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kinds":[39000,39002],"limit":1}]
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","886DD0bDA75D0FD14B9ACE6cBf8b0b4C"]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"4c40fffd5a149904be518707ceecd12a1075daa8d164bb7ff4f85b3ab88c60fa","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266666,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","abe779de7c164aadcbbd933bb71dcf39ec3779771d678d7d732b03beedec7c58"],["p","8a8f565a69580fb90304d0f64af321c8660d85de9a14b8541c14514e0bf1c2fb"],["p","85d5e49cc2c58a684069f67600bf3e9f640bba376b67675f37d4aa7f7a156b84"]],"content":"","sig":"620382fc2d7bd5ed18f6f825ee2d6976113f0aa865334935f060fcfdf4138a17ef2879ca9601c030383af0ef56229a0e5d831c465032713bd0a99ee8301adb34"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"2cacdd95ac8c6a4890e316ef67ec3580b3d369996b0db53b1c4face575b15ab0","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["p","8fc1b58dc95d5b3c2d6b2d70248e5e5fac507283971d5cd78696cfc4175385af"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"],["p","aaf092aabda3304cf5f5a5c8c0717795a34a7ab745a124eae07fc4820a8f04a3"]],"content":"","sig":"eed3f7775f5291739f7a57bcd65cf92dd63c14407fe9a55e8180b124e0f849540b48aa4d6aa3311bf32150ddb83c883415d7863bb0b32da12f6d25e8511d30ed"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"217935c02389037452e7003862a9be57b1829473a92cda6c34339dfed7553b17","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266667,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["name","open"],["about","zbbxbx"],["public"],["open"]],"content":"","sig":"b68d4eed09d0a61492404582626175411a7e1fec0e18f96c6fb670dedf62c2be7b8266b5c0ddec08c4366d851703542238e40032644534d793beb4b7df3de858"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"c7420cf7a4411703147133a89a38630b9237338f070056bb90bbdf7261fa8bb8","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["name","123456"],["public"],["open"]],"content":"","sig":"dc10c790b950bbdaca490babb8d72c0f99ed67642e109d7560ab60698080035312cb21bd8f38ff9558e3d35e7887c8186d525f3a5fd53a3f7708de0d79e1f400"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"c52256c8db99f2cbca911782c816565c9f916c14b2713ebbb6e00b324677cf33","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505601,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["name","k01"],["public"],["open"]],"content":"","sig":"666737fbaa23f8faa8b2c20584ff65f5b088914dcf6cdc7541ab979f6aa6da03fc197ead22eeef9680876810cf91a0cfbbc5db18bb8049a25ea2f14c869ffb46"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"87cdca1afd7a63de309c31678fac75d39ea42351547e104f9192771f7ef36370","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505600,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["p","8cf9747066108ba65a59b0c8a94894edb0c1fcf90cb0c53cd2798b0879cec28d"]],"content":"","sig":"c57bc167bfdbbbbf63e4aec796d238eb59cc8837bb96e3c621b5167ff9786591a765af6012804c2839cf8e7a2bf006efb79e6f36723128a8d51401dfd5232647"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"8bfa7f1100a413c74596b133a4c7ec1425de6c6f75cfbdf34793a41fbfd5d26f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722707683,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["p","638384700918e6a472477045dbcc229362ac0e64a48d927c48af609a956b9348"]],"content":"","sig":"658a08b053bc24e706e9353dfa882d9259a50153ab545fc1906db9b52d4b22d5b10b862bfb5f920ce5099d965a7c235b23c83c63340fcab333c73baa771a9f4f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"589621e1c574f5afe1cdf19053a31b4dd3922ffd2f73c983ffde0d966496d626","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393338,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"cde54aa4337838ab267960ec79ceb8024ee03bcdc594fee73c4764c256ccd9122cfac6a72bbcffad20bf399447b2ed2df958163f1b5e9901386b94d49d4ac019"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"e4139f780759eba392fc50d7a864993c175b42378633741624551a40ecb527b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722714605,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["name","Bitcoinlighthouse"],["about","Selbsthilfegruppe für anonyme Bitcoiner"],["public"],["open"]],"content":"","sig":"01dc2eeb2b298954b77172c72c448fe0caf2ecf3fd388253dfcf9210a11e6e3f75db699b1da65fe0191028b98f6f46eeaf1bcf8ecb9ca8ecc541e330bdafc7ed"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"91bdf5b98d96c81e3e6ba808fc7d5a0702a44e63bb9089fcf5ab040306f626b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393470,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["name","哈哈"],["public"],["closed"]],"content":"","sig":"8852984fdb46c9bb3e0360f65acace4a174bf61a9a50aedc743559b6f73149779e4b0297a34c998bafc882e81c9ad59befb3731e9fe0b6009a3bd40e25008831"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"489befce3455a8c541b931c71745d165821c43f7a1e310384fc884e07416db05","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"d946f99c8bfe0e39ccbdeace1f5ba3ce12ef416c43346a7cff2262b61acc9e510199784f2426e8098eabc20f718137e5f44e75d38b4d1480986e351e8b9dcc36"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"ac25ac7489883696306316bde5067498b40991b64b67c7a8060a3850e42d57e4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5ee5b30ca96e740884efabd81870bacd12cf1d7ef67987ef20215de925f106cd5279ea53974f3c2705dd52032846f3c7fee8ce6f6c1bec7c668c2e6dd783603f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"0974987c982370f551d7057cf948ebe8f52a7a1ffeff480c0f1976a7aba807d0","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936555,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["p","9e71a8407e5e3ff7fe0a7d370099a75fb8725f7e1d5a6b9323a22159af88b130"]],"content":"","sig":"da6d93806fef66b47649ded3be7d44023feb863932a99f93e039dd596e14724518af7aecee523cfb550d21468d44f8453e2647b5f333ae2bbe15489b50a241a0"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"3e87cd3ff4dd3a9c66b58f09a510caa7f8d52b8fc94244a0b906eaafd2639b95","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["p","4840d58e81bf835d01db0d2dc43bc5e1e16e3dfef2b674821dfaa0031a8cc00e"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"]],"content":"","sig":"d124dbeec37fe24e209b457f7287818b9bdded85804aab7b48808bad84ef4baa4f9fb77c3bbddf88992fac059b758dd8585e1f4edf656a3a76945f56f6c653e9"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"bf0c8d5a04e528bcdc5f53ec5081d23ff1089b11a32daecd5b8815a642874c68","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936556,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["name","Spring"],["public"],["open"]],"content":"","sig":"afa535ef023627bd806af4575dc1d87126a920ba49ba633f6265dfac1777e245fe153a438ad85fcef6ffa1c05144b71ce7c26f9d56d96cbb00aa21863a92684f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"d111d653e511cb8393896e7bd47c63c7fefed3a310adc6cf419f2621bc31048a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["name","07261203open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/07261203open1721966599503_avatar01.png"],["public"],["open"]],"content":"","sig":"bfd1d608c2634cf03f1dc598019323b1a30bdee8bc775047c778a535f0a509233b721c61e5ddf0bea001eb73d71592215352bdaff591b160e72b8be5569eb95f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"a64a04bd731ed549b6a5dce0edaaf164d2aad8c373c230c7a55a55e932ebec39","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["name","TestOpenGroup"],["public"],["open"]],"content":"","sig":"06e268603bd2cdb79865f3087464f561e35707d865ebdee3c02b417688b753920bb29544746d0fc71b7410e21086256e89b5bd47adbbe353c23d4e03d8bbfc95"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"8c345fb92647b40a9099cf6dce4de14809191d3447aafded4ff1607caf33c4f4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["p","75a4f515d60478a10d2ab1655e37269399c31454a3c88c8815b228a9cda2aad1"],["p","f2f63b82ff9ea16f82636df41ea534e47556d42b4890da3b1a71b4655b31f683"]],"content":"","sig":"d8c9ff375e217259ff23660bf7ad6e225bacce61be2a9d8c935a238b580de2310c7ee4f19a9fee0203197fb66a3319acfd0b6152f4e2e3eece1aabf4de3104d8"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"a1a9230c48aa059fb4524ba532faf3da17d6f58e70b2befc323a197d1442df9a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["p","37c10448a0fd9295d166100dcd80b01f52f3cc70c98431a89f480fc9f8256861"]],"content":"","sig":"8aefb6186b75143d1569a1fde5e128b4fc2e9b90bed9b9082e03f60eb02c94bfc8a996e2359c336d89dea0670fbc3c23e26efbf2b9e58aee10f6ec297e8457db"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"522c83e8e552b04900d33fbb44e57fcee40fe8a8a009ab5ebe86335745de7261","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242443,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"92c1e1db2373a8c0a418894a381b556664cd0c5847c63fc87776126b16119822b761fdfe4d2b377e1e7502ce521c51d44ca1bedbe6b95c4dfd8345195e84d51c"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"bd69aea3167baa1358f641edaeb9bdff274f14beb105e671d7f0d8f497121a62","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["name","Test group on 0xchat"],["public"],["open"]],"content":"","sig":"f2c5c8b3cf5d210822d2ffdb10089d57d06e9a731621703f9411a2c0f5eca2dfdb4f72cf46d0126763c93ba482221d8f3113e7c39a847a7d3bfc173597ad5c59"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"0642dd8b786f9fdeccedc0f956a3ec8552320088dfa95f6dcd4d15581990edda","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242458,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["name","huhuh "],["about","huhbsbbshbas"],["public"],["open"]],"content":"","sig":"925e14c0615d795648086261a645221674b070d4fe6795c0ebbd32b4fa1ef06dd9daadd3ba95d277084b4b876d32b30d5a0f67e9e5f600bff1a43f74ef7d4b3f"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"92f28095b4bdc1ee57a7e882351eae0bdf8d36e760087593f7f3d72816934dd3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393366,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["name","0xChat closed"],["public"],["closed"]],"content":"","sig":"226232daab99e5e5d821820f820b18a9ee6a610ecd361d3132cb4e87d12a4ee14be7728567e2f8568f1551c170abf5af8493d9a0eefe79fd7f4d37b9d88cfb9b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"3ec7625fa91d27ee1bd164b6dbd2f742f90764e1492c37d6098762ba4f7ab3a3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393106,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["p","df73973dc294a4599eefa5f9668a714300196f0057ed3bd84298404d2b4a3e68"]],"content":"","sig":"3ab677fe161c2db4d8da862581c142082ac205322eaf62a1cd6232f7545060e326f2b22e6c9720592b8fd64ecdb1dcfe230cec3c57de0654d81d5486fbf70b69"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"363590f947396328b7745824fedd4956fc245972f0a28b52a06981844652e1fa","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722044488,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["p","6e0a1f4852bc8fa42b8047d60a81930d88904ca3f2acdfb5b8413ab8c9f444e5"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"],["p","34651a9392d34bf9d064e39f3c10beef74b5e28e710c07324317b687c4abd7e8"],["p","30471668d33668c9d756e8907714bdbfe72d8b146e953f07cf60a5ed8db9df6f"],["p","0ca69fed2b6a3e794263c4166f2a8b442253b2623b6788e938c74b9c607da600"],["p","8d7e9c016e78dc20e48a7c384cf9123642a5c35fb833b0fb1515cd93ca12555c"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","cbe68b7a159910baeb01db478d4531da512c04f969aef49d810e84da5ddd3540"],["p","8634b238fe84b6ebc3ffdd96e83672c9e9dc3233e2720627fa7e3aad114bebe2"],["p","2a0c61087537df00b9aac2b6f03fd056bbccdeb8766873caff1f5ef98f39d340"]],"content":"","sig":"a273791aba48e0111cbb49ceae76b6881f681936186251d79d0ebaba8a4b97d1b3c8e778ea8462d31d52c11839088444d2bd1bd147a679e314a6cd63e68714fb"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"1696e992653ea97c0b19fec3f6ea1fdcd51d321d732f2648795e72dd7022b4f3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848754,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["p","d8881295f6442dc93481f888ddb5e74aeaaddac9457e2fb7bd09e68f4d5c8db7"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","ef76ae01ce09837665408dbc87ed575c235035c66cfc9495f4dfcbe2e1f11a4e"],["p","5a5cb2234053beac5c0e16fc5330300c2a2d0ea30da2bbd0379fb6aab8aff065"],["p","2efaa715bbb46dd5be6b7da8d7700266d11674b913b8178addb5c2e63d987331"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","0da3e84567ac1e7f4155d4b979a66e24d8742a583e7706d96a4daaa377cc7ada"],["p","82fbb08c8ef45c4d71c88368d0ae805bc62fb92f166ab04a0b7a0c83d8cbc29a"],["p","c7617e02242f5853fe5b513d411f19b44ad3f0da95a28d33a9b7e927f255dd2d"],["p","0d97beae567fcec9c6574f1c6ef6126ea969d4992c3198e51c0fac52c5274a14"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","73c6bb92440a9344279f7a36aa3de1710c9198b1e9e8a394cd13e0dd5c994c63"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","bb47f0ccc58c69d21f1d2ae9452f70b67410db19e16dfe8369e5d52bf619aa1d"],["p","edcaf10182a45f9c1feafb5f066e0bc0e8c8935bd3382a718d73a0bbf87281c3"],["p","ff6c2abc19e9d694182c19366cddd942779f7b567076ad2ad011fa5839c0761a"],["p","ffd375eb40eb486656a028edbc83825f58ff0d5c4a1ba22fe7745d284529ed08"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"]],"content":"","sig":"d62a0ec5ffe5df80c8a5011e529c1309f87acf04e6f8fa5452567bbb9204a50356c0e4bf7398d4e4a76eefc0c300ca3ce688ee4e4e89707b0b9ce65aa6d530c6"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"db801a6a8c1bef1f6e3617cb3741eaf44362cf3135ffd3be399c75d733dbc080","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723078251,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["name","Nostr After Dark"],["about","Dark Occultists of Nostr "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/1722043448872_avatar01.png"],["public"],["open"]],"content":"","sig":"afc9a05e8fe69ea7f45f2b36dc486897ce6e7dcbc8be1d235077127186073192344f68507ca12137b3c6fc51399b5668d9b1aec21c95aac21eac2e62672fdd26"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"f5ee09c66362171b94cc3d183ee242dc3111fed1f3ea292d83fdf25ce7a80a2b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848871,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["name","bullishNuts Group (Open)"],["about","Public group to chat about the bullishNuts PWA or Cashu in general. "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/bullishNuts1721848743920_avatar01.png"],["public"],["open"]],"content":"","sig":"739670098aac3e6123d0633b4b8ad79929e9e0a6186713a29c931bdddb5f07c5b848b05d1192986bce4eafca8ff09941c0e8a9eb79c7e008c5665046e8483a47"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"f36d48ed0078b1c7375eaaf3a843441db77bb0798ec12d7c7dcd472084c6b55f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796169,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["name","xingGroup"],["public"],["open"]],"content":"","sig":"ea0c50d928edf22e478efbbaef8a10b754b243b426d5fe7dc9c379c62b8221e147f9f8f76d21fa94a84a2721b9402dbaab06b4fd160721bddac05507e7208197"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"2deb4c22a74fffad186c921615356f96f1191fae27d5bd0e0f45997a0f39946b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796168,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"34b57cdbcb05ac18cabd3eb9bc19fa7fb5a9424ea5c5639cc4c3073b42b8765ad465ef8603545f7c9f4340f477d42f8fd8601ea64ed4a855ceb67b2982b6a098"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"211448fee53c458a840879b84a85294e9a141a2f712cff383e1cb445f9b55f09","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5be3ed2e01b0900b42cf73cdfd46802641a7c3a05a3d3d56faf8e52aeaff00705aff10deb58a4a738eb69278ee78d0633bbf6b3d2395b1bbb307bd9cbef7711d"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"51eacadad11125b544f5dedc7695610706df4358d1f06eab5ecc080420ebe8a2","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441385,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["p","4dbfcb7c5ddb8249f9c7eb8c21e019f08fbfb7ec5ded5408b614590beb8d1695"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"]],"content":"","sig":"41dbb33560ce376752152d6606c436075e162b8323024d0eba1e69d8abb807b2d15bc8aad265ca8b9739879dce4746514740f140c1076350c93f2ee956b5a4f3"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["OK","b3678a4123c4fae4745c0cdf661988a3a318cc576d873f97c065ff930b6b3165",true,""]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"431ccfbdb4d95a9486b7076f045031fe1e5eeb4109353c06855059806bff77db","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"ae3047fec4da5abf58102758fd04070d93e15a3988f078a92cb3c2b5a5aa711cba65fdba53dc3feb8e3b366819ab16883f3d8345ebacd8e871a44629295a5851"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"cb450661d6dd4f2225dbf36e57fc88f9b573b6b6f3a044362149e1f1861812bb","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441386,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["name","FreedomTechCommunity"],["about","This channel helps people break free from the tyrannical grasps of Big Brother, Silicon Valley and Big Tech."],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/FreedomTechCommunity1722441372066_avatar01.png"],["public"],["open"]],"content":"","sig":"f431dbbc0d375376e7f5336a8ac43bf0e66b39cb2b85d884f4c717f48b20bf9966d7e01796069367a9916e128a4e1f36ba0f84977c277032d9d9d3998e2d6e1b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"0819d99c672051ecac0a32af4ab3d181c10129511e483a35caeb1a4916038b8f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["name","~~"],["about","~~~"],["public"],["open"]],"content":"","sig":"d3933543a36e7d55910d5a1cc6868ab160cc1d41045951caf9525db7322e1f2abaf72a59e59b4175d2ce7db7b4324c7d4fafed97fdb2b5b3cdbc80a2a4e25c8b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"18c9a96535c60627f6dc3ca7092cdb5d01d4070278badfe9d6218b6a417ebd2e","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["p","da95ee16ab5eb8876cccb7fe71aa6eaa674dd49a531d641727accc7cbbb2a39c"]],"content":"","sig":"081c186c47857a6eee50fe8fa32db162cecf3e1aa5ce81f3151c08c9a0581f2f5d70ec9294f6aa82008424ee8c25a6b2b1ef3d744cec36b358f87ba6ea06ce28"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"caee45bf66a09918ad987ee7a14c006d0e3cda49f8da0e0d1968c64ddad3b1ce","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721818256,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"]],"content":"","sig":"19f77230a68b44d019e559f8694f908a427dddb7a613edda250530fba6ffc7e1be48e264b67071b40accc40fde749823f0cd647092a6af74e000d0d5e1f1cd1e"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"e0330a9641a4ec7243a5370df7e3b854fd65d5b93e95dbbf87962666ce47c38a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393492,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"3a062a37c468fdae822724c660ef91b1f9fe7c4339bf0a02db7f6efd5d25f590f2072b171020a47cca1ba5f5013b3e8ea458f6b432a12f8d146e368ec13a0c69"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"5e4fe29420122b76b6d4fb2da49d3ca7d05bc30861dcbbea890846dd6efba468","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721819044,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["name","0xchat Community Group "],["public"],["open"]],"content":"","sig":"5d7c6ec4c8dc8c1d05865934057a441dc92543a385f4d679226ec681e7f3098c3df947bc9bcce239ecc8149bf97f0ec187b0e98f25a0a1f69070d32fc2a5abb3"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"6636f9ed5628d9d5b7394f2f266bf78f7d443dbd6f6a833930a305833adfc09d","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393493,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["name","我的小"],["public"],["open"]],"content":"","sig":"dc2838763c0324f851de66aa0e101f0046bc4b8bd5f0c7f914ad6368aa9501f7df53f5851fbf441e518d131bc7750fd665b57e8acd67caa0b1db1384483c96a7"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"6b15742b836d8cc17055a71f859c71799e4472b29059d287553239d5693ed5dc","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721962530,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["name","testinggroup001"],["public"],["closed"]],"content":"","sig":"91cbe33326e1041cf24f823ad5bcc5cee00d2d3d3cacdc590df0554032417a604453866f589721353e60d7bab4cbe0d62ef157b440b0b0e23c1a6bfec2110074"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"8cd2f4645df26f1375704e6131ad165106da485cd5024d9fe9b5f03348e83dee","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721960869,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["p","230b561bbf9799dcb978f1e95a36b18a7c6eeafbc661d39f8d138c06e81adcd0"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"01a1a1103d2e8117ed26d2033ff0d8a9ce85d4e8d5ead163af184af7560b5afcc0ceb5808f0c90f6f57ac9dd16d521ed77fd07087b09c6c951e1310848973fd9"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"343c72f29d8232fdd88af4cb37c48d38017cc59559a000f43a06dae109c091bc","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810707,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"]],"content":"","sig":"903b0ced30f08c31bc546c3907467fbd4df8e54955a1233fca60f4d6e85d68eeb2412b5d8bf8c55a7bac3df757bee8f9ba095241e39938a49a8d07f1ab09ca3b"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39002,"id":"34683a74d3a12375f6a48dd4aa9d0567ef91550dd9157a89f07d39cae2baea1f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["p","ddbfd04c6d2b63ecb17261d372b7b5a6429f453edd7387e72c4b31c6b86a5594"]],"content":"","sig":"15984f49f608de2700d4304bb3448bb39a3e37ea5cf3a4bb585227dd06102df544e41e86a1ba1dccb499002a71b2e1b04dd91241d43f32ec1e3a95b758e54fc6"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"a3c161f1d1648d5b891577cefe11cec58407ff40d909c977ca0b80e32d0f6fac","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810708,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["name","One Dream"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/One Dream1721810692720_avatar01.png"],["public"],["open"]],"content":"","sig":"616dd5e5cb8d7b086539f5e053ee456be3b3d0e87ec74735259530566d9ec69622d48794c6860833aa0d35beee385319cfca87c8bdeaaf2f05963041997caf02"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","CD1bf535305F0e9AE87DB1ceD66DA55D",{"kind":39000,"id":"1354ac354d36fb009209096b5d93ba4ca24bc5683db24a9596c79c333c6da53b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["name","看吧"],["public"],["open"]],"content":"","sig":"b6c04a55b33a11af14dfca261e73862493967230c1fe3cbabf328367f1266b8aa5848604c1c1977b7a9cc12ac638c819e96b8e697fef8b919b3c01c862579171"}]
+
+
+3:33PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","CD1bf535305F0e9AE87DB1ceD66DA55D"]
+
+
+3:39PM DBG 环境变量 RUN_ENV 的值:pro
+
+3:39PM DBG isTest:false
+
+3:39PM DBG 加载配置文件:config.json
+
+3:39PM DBG 0
+
+3:39PM DBG Begin Init APNS Client!!!
+
+3:39PM DBG Init APNS Client Successful!!!
+
+3:39PM DBG Connected to wss://groups.0xchat.com successfully!
+3:39PM DBG All relays have been initialized and clients are connected111.
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["AUTH","bd4e10fc42b8b89c"]
+
+
+3:39PM DBG Sent message to wss://groups.0xchat.com: ["REQ","4CDc0EBBBBAa9E7f83AabDa5c7ccBCDF",{"kinds":[9,11,12,9000],"limit":0}]
+
+3:39PM DBG Sent message to wss://groups.0xchat.com: ["REQ","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kinds":[39000,39002],"limit":1}]
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","4CDc0EBBBBAa9E7f83AabDa5c7ccBCDF"]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"66f58cbf924020287da5de85ef7d7e5556858f8d60d5ce3a3b4c36041944bdc8","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266666,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["p","abe779de7c164aadcbbd933bb71dcf39ec3779771d678d7d732b03beedec7c58"],["p","8a8f565a69580fb90304d0f64af321c8660d85de9a14b8541c14514e0bf1c2fb"],["p","85d5e49cc2c58a684069f67600bf3e9f640bba376b67675f37d4aa7f7a156b84"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"9320175ce51253f6a00fd343ee4371be66743c62a28bea4a611e4ee001e9795d1f6de944695aab107431a4c315e2ac4e05ea6aee9704e7d2541a3d928937d29e"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"d09479780f5704bd331559f9474dff62c804d450c30cbe54efd509d8e40018cb","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"],["p","aaf092aabda3304cf5f5a5c8c0717795a34a7ab745a124eae07fc4820a8f04a3"],["p","8fc1b58dc95d5b3c2d6b2d70248e5e5fac507283971d5cd78696cfc4175385af"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"864744ca34b89da5bbf08bec9217a8f31e4b037e73bb0a253c5478f678d3e3837c73ce5c2dc02670a22f7966b39ef265c189e1d99e35113bbd98897e2d0cb884"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"217935c02389037452e7003862a9be57b1829473a92cda6c34339dfed7553b17","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722266667,"tags":[["d","bbf4a7739ce0d3700d91a4df976efdd3c2337530ff22f4a8f735f2d2419b3910"],["name","open"],["about","zbbxbx"],["public"],["open"]],"content":"","sig":"b68d4eed09d0a61492404582626175411a7e1fec0e18f96c6fb670dedf62c2be7b8266b5c0ddec08c4366d851703542238e40032644534d793beb4b7df3de858"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"c7420cf7a4411703147133a89a38630b9237338f070056bb90bbdf7261fa8bb8","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721898199,"tags":[["d","747de7fb6abec349bdcded3e646938cb669a3c5eaf8c6da5a14945a81bd3d397"],["name","123456"],["public"],["open"]],"content":"","sig":"dc10c790b950bbdaca490babb8d72c0f99ed67642e109d7560ab60698080035312cb21bd8f38ff9558e3d35e7887c8186d525f3a5fd53a3f7708de0d79e1f400"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"c52256c8db99f2cbca911782c816565c9f916c14b2713ebbb6e00b324677cf33","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505601,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["name","k01"],["public"],["open"]],"content":"","sig":"666737fbaa23f8faa8b2c20584ff65f5b088914dcf6cdc7541ab979f6aa6da03fc197ead22eeef9680876810cf91a0cfbbc5db18bb8049a25ea2f14c869ffb46"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"87cdca1afd7a63de309c31678fac75d39ea42351547e104f9192771f7ef36370","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722505600,"tags":[["d","4b46e6c83154f6b8401cec949458d8635c68ab14070552692ec39b349264f04a"],["p","8cf9747066108ba65a59b0c8a94894edb0c1fcf90cb0c53cd2798b0879cec28d"]],"content":"","sig":"c57bc167bfdbbbbf63e4aec796d238eb59cc8837bb96e3c621b5167ff9786591a765af6012804c2839cf8e7a2bf006efb79e6f36723128a8d51401dfd5232647"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"8bfa7f1100a413c74596b133a4c7ec1425de6c6f75cfbdf34793a41fbfd5d26f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722707683,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["p","638384700918e6a472477045dbcc229362ac0e64a48d927c48af609a956b9348"]],"content":"","sig":"658a08b053bc24e706e9353dfa882d9259a50153ab545fc1906db9b52d4b22d5b10b862bfb5f920ce5099d965a7c235b23c83c63340fcab333c73baa771a9f4f"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"589621e1c574f5afe1cdf19053a31b4dd3922ffd2f73c983ffde0d966496d626","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393338,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"cde54aa4337838ab267960ec79ceb8024ee03bcdc594fee73c4764c256ccd9122cfac6a72bbcffad20bf399447b2ed2df958163f1b5e9901386b94d49d4ac019"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"e4139f780759eba392fc50d7a864993c175b42378633741624551a40ecb527b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722714605,"tags":[["d","cc0b25b56b87ff74c05e4437f853d9ee0dfe96517986c4a8bdb09db23191f008"],["name","Bitcoinlighthouse"],["about","Selbsthilfegruppe für anonyme Bitcoiner"],["public"],["open"]],"content":"","sig":"01dc2eeb2b298954b77172c72c448fe0caf2ecf3fd388253dfcf9210a11e6e3f75db699b1da65fe0191028b98f6f46eeaf1bcf8ecb9ca8ecc541e330bdafc7ed"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"91bdf5b98d96c81e3e6ba808fc7d5a0702a44e63bb9089fcf5ab040306f626b7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393470,"tags":[["d","0c7088425b4bc22d8f029908e779df7ca691d1341ed0478d7eea1ddb705be422"],["name","哈哈"],["public"],["closed"]],"content":"","sig":"8852984fdb46c9bb3e0360f65acace4a174bf61a9a50aedc743559b6f73149779e4b0297a34c998bafc882e81c9ad59befb3731e9fe0b6009a3bd40e25008831"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"489befce3455a8c541b931c71745d165821c43f7a1e310384fc884e07416db05","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"d946f99c8bfe0e39ccbdeace1f5ba3ce12ef416c43346a7cff2262b61acc9e510199784f2426e8098eabc20f718137e5f44e75d38b4d1480986e351e8b9dcc36"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"ac25ac7489883696306316bde5067498b40991b64b67c7a8060a3850e42d57e4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","cefd8b057fe198aadd56e7f89e3af01addb8afecbe0478727ff6d48825c49950"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5ee5b30ca96e740884efabd81870bacd12cf1d7ef67987ef20215de925f106cd5279ea53974f3c2705dd52032846f3c7fee8ce6f6c1bec7c668c2e6dd783603f"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"0974987c982370f551d7057cf948ebe8f52a7a1ffeff480c0f1976a7aba807d0","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936555,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["p","9e71a8407e5e3ff7fe0a7d370099a75fb8725f7e1d5a6b9323a22159af88b130"]],"content":"","sig":"da6d93806fef66b47649ded3be7d44023feb863932a99f93e039dd596e14724518af7aecee523cfb550d21468d44f8453e2647b5f333ae2bbe15489b50a241a0"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"1bb240569a4cab209a9dbe993f51170128a5454538f2044d17f490ae16db9dda","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","4840d58e81bf835d01db0d2dc43bc5e1e16e3dfef2b674821dfaa0031a8cc00e"]],"content":"","sig":"9736550df11faad1d8b66147afb87a751357f472a0c1d5ce13bd80255bc06fed9e5315199e77efa5ed533cdf9815c2f85f6e7089a773b72637547efc1a4157c5"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"bf0c8d5a04e528bcdc5f53ec5081d23ff1089b11a32daecd5b8815a642874c68","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722936556,"tags":[["d","6dc98b6d435ec47e648da306884485ae6d9345460fba61f8b55d2c85e8a6c284"],["name","Spring"],["public"],["open"]],"content":"","sig":"afa535ef023627bd806af4575dc1d87126a920ba49ba633f6265dfac1777e245fe153a438ad85fcef6ffa1c05144b71ce7c26f9d56d96cbb00aa21863a92684f"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"d111d653e511cb8393896e7bd47c63c7fefed3a310adc6cf419f2621bc31048a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721966610,"tags":[["d","12eeee5a4e11d4d08f734c656aaefa06d2150091ddf09a58e7e669ebe141e07b"],["name","07261203open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/07261203open1721966599503_avatar01.png"],["public"],["open"]],"content":"","sig":"bfd1d608c2634cf03f1dc598019323b1a30bdee8bc775047c778a535f0a509233b721c61e5ddf0bea001eb73d71592215352bdaff591b160e72b8be5569eb95f"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"a64a04bd731ed549b6a5dce0edaaf164d2aad8c373c230c7a55a55e932ebec39","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["name","TestOpenGroup"],["public"],["open"]],"content":"","sig":"06e268603bd2cdb79865f3087464f561e35707d865ebdee3c02b417688b753920bb29544746d0fc71b7410e21086256e89b5bd47adbbe353c23d4e03d8bbfc95"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"8c345fb92647b40a9099cf6dce4de14809191d3447aafded4ff1607caf33c4f4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722498437,"tags":[["d","a26fe7bf40819275d1c8ec99da2f813c544477090b6010be3e7d76a7ff5189cf"],["p","75a4f515d60478a10d2ab1655e37269399c31454a3c88c8815b228a9cda2aad1"],["p","f2f63b82ff9ea16f82636df41ea534e47556d42b4890da3b1a71b4655b31f683"]],"content":"","sig":"d8c9ff375e217259ff23660bf7ad6e225bacce61be2a9d8c935a238b580de2310c7ee4f19a9fee0203197fb66a3319acfd0b6152f4e2e3eece1aabf4de3104d8"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"a1a9230c48aa059fb4524ba532faf3da17d6f58e70b2befc323a197d1442df9a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["p","37c10448a0fd9295d166100dcd80b01f52f3cc70c98431a89f480fc9f8256861"]],"content":"","sig":"8aefb6186b75143d1569a1fde5e128b4fc2e9b90bed9b9082e03f60eb02c94bfc8a996e2359c336d89dea0670fbc3c23e26efbf2b9e58aee10f6ec297e8457db"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"522c83e8e552b04900d33fbb44e57fcee40fe8a8a009ab5ebe86335745de7261","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242443,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"92c1e1db2373a8c0a418894a381b556664cd0c5847c63fc87776126b16119822b761fdfe4d2b377e1e7502ce521c51d44ca1bedbe6b95c4dfd8345195e84d51c"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"bd69aea3167baa1358f641edaeb9bdff274f14beb105e671d7f0d8f497121a62","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722244411,"tags":[["d","e9d658ddf8e4171bc11f05259bb99affa52028ef573e5b1e895f6a527274b5a8"],["name","Test group on 0xchat"],["public"],["open"]],"content":"","sig":"f2c5c8b3cf5d210822d2ffdb10089d57d06e9a731621703f9411a2c0f5eca2dfdb4f72cf46d0126763c93ba482221d8f3113e7c39a847a7d3bfc173597ad5c59"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"0642dd8b786f9fdeccedc0f956a3ec8552320088dfa95f6dcd4d15581990edda","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722242458,"tags":[["d","fe3592f0dc74d02fb2f1e165d67cd1487292f82cbf6f33aca2e3159d376f5818"],["name","huhuh "],["about","huhbsbbshbas"],["public"],["open"]],"content":"","sig":"925e14c0615d795648086261a645221674b070d4fe6795c0ebbd32b4fa1ef06dd9daadd3ba95d277084b4b876d32b30d5a0f67e9e5f600bff1a43f74ef7d4b3f"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"92f28095b4bdc1ee57a7e882351eae0bdf8d36e760087593f7f3d72816934dd3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393366,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["name","0xChat closed"],["public"],["closed"]],"content":"","sig":"226232daab99e5e5d821820f820b18a9ee6a610ecd361d3132cb4e87d12a4ee14be7728567e2f8568f1551c170abf5af8493d9a0eefe79fd7f4d37b9d88cfb9b"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"3ec7625fa91d27ee1bd164b6dbd2f742f90764e1492c37d6098762ba4f7ab3a3","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393106,"tags":[["d","24f1733de52bb812cc744096880658f392dd12aaa662be015fb58ffef6cadcc1"],["p","df73973dc294a4599eefa5f9668a714300196f0057ed3bd84298404d2b4a3e68"]],"content":"","sig":"3ab677fe161c2db4d8da862581c142082ac205322eaf62a1cd6232f7545060e326f2b22e6c9720592b8fd64ecdb1dcfe230cec3c57de0654d81d5486fbf70b69"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"d7d89c3d037860540e080de0acf26891be8ed2188a7399d17c02ea91c9ad840a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722044488,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["p","30471668d33668c9d756e8907714bdbfe72d8b146e953f07cf60a5ed8db9df6f"],["p","0ca69fed2b6a3e794263c4166f2a8b442253b2623b6788e938c74b9c607da600"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"],["p","34651a9392d34bf9d064e39f3c10beef74b5e28e710c07324317b687c4abd7e8"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","8d7e9c016e78dc20e48a7c384cf9123642a5c35fb833b0fb1515cd93ca12555c"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","8634b238fe84b6ebc3ffdd96e83672c9e9dc3233e2720627fa7e3aad114bebe2"],["p","2a0c61087537df00b9aac2b6f03fd056bbccdeb8766873caff1f5ef98f39d340"],["p","cbe68b7a159910baeb01db478d4531da512c04f969aef49d810e84da5ddd3540"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","6e0a1f4852bc8fa42b8047d60a81930d88904ca3f2acdfb5b8413ab8c9f444e5"]],"content":"","sig":"b026bff17fccbc76082673a0f07d5743664c053913ed3e27722b63b3cf3cfccbbedbd5f1708ea9414be88c3ee8695d2d9674761ed9ca9e84d67b1e4bf5d18a78"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"73970aa86a0b6760280e527055674b8cd480f4dfb94a84b05a3e52364b3d5ee7","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848754,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","b83e9c84f06692f7a68dbd1c58cae3ad80edb0f77b03e506e089c5db2cf7cc81"],["p","ff6c2abc19e9d694182c19366cddd942779f7b567076ad2ad011fa5839c0761a"],["p","ffd375eb40eb486656a028edbc83825f58ff0d5c4a1ba22fe7745d284529ed08"],["p","ef76ae01ce09837665408dbc87ed575c235035c66cfc9495f4dfcbe2e1f11a4e"],["p","d8881295f6442dc93481f888ddb5e74aeaaddac9457e2fb7bd09e68f4d5c8db7"],["p","3f68dede81549cc0844fafe528f1574b51e095e7491f468bd9689f87779bb81d"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","0da3e84567ac1e7f4155d4b979a66e24d8742a583e7706d96a4daaa377cc7ada"],["p","5a5cb2234053beac5c0e16fc5330300c2a2d0ea30da2bbd0379fb6aab8aff065"],["p","2efaa715bbb46dd5be6b7da8d7700266d11674b913b8178addb5c2e63d987331"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","73c6bb92440a9344279f7a36aa3de1710c9198b1e9e8a394cd13e0dd5c994c63"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","bb47f0ccc58c69d21f1d2ae9452f70b67410db19e16dfe8369e5d52bf619aa1d"],["p","edcaf10182a45f9c1feafb5f066e0bc0e8c8935bd3382a718d73a0bbf87281c3"],["p","82fbb08c8ef45c4d71c88368d0ae805bc62fb92f166ab04a0b7a0c83d8cbc29a"],["p","c7617e02242f5853fe5b513d411f19b44ad3f0da95a28d33a9b7e927f255dd2d"],["p","0d97beae567fcec9c6574f1c6ef6126ea969d4992c3198e51c0fac52c5274a14"]],"content":"","sig":"30b3b051260c7ae4bd45384c310455f9d6ab5640d3a0f476ca680c702bb4616ee56b9442d38c51e6169a5d310fec0458cecd5e7883c643a4996a3e0697faa123"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"2deb4c22a74fffad186c921615356f96f1191fae27d5bd0e0f45997a0f39946b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796168,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"34b57cdbcb05ac18cabd3eb9bc19fa7fb5a9424ea5c5639cc4c3073b42b8765ad465ef8603545f7c9f4340f477d42f8fd8601ea64ed4a855ceb67b2982b6a098"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"211448fee53c458a840879b84a85294e9a141a2f712cff383e1cb445f9b55f09","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["p","7d1fa86b44b4da08d242f4f463e913a2364353d3b5e986486dac9bfdc9c10c56"]],"content":"","sig":"5be3ed2e01b0900b42cf73cdfd46802641a7c3a05a3d3d56faf8e52aeaff00705aff10deb58a4a738eb69278ee78d0633bbf6b3d2395b1bbb307bd9cbef7711d"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"a4622fc525425b7dd05b60faef8b722acad9891e0fea3ae0962e78e1d53e435b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441385,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"],["p","b77b7699ed619f62bedcb4c1a54aead8f120d72fef831f779b96b76ae504354f"],["p","4dbfcb7c5ddb8249f9c7eb8c21e019f08fbfb7ec5ded5408b614590beb8d1695"]],"content":"","sig":"79ca51177981b402729609ac7a449c75d858aa615e979fa5fd0989666b801155ce0bd0078702c4535deb43e89754a0eba9a0d372e30dc932abed1839b70816a4"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"db801a6a8c1bef1f6e3617cb3741eaf44362cf3135ffd3be399c75d733dbc080","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723078251,"tags":[["d","7a722cef6e3a44d95ce2e99ea83fab4ed98e3372e77537f29d45c72dbc208cf0"],["name","Nostr After Dark"],["about","Dark Occultists of Nostr "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/1722043448872_avatar01.png"],["public"],["open"]],"content":"","sig":"afc9a05e8fe69ea7f45f2b36dc486897ce6e7dcbc8be1d235077127186073192344f68507ca12137b3c6fc51399b5668d9b1aec21c95aac21eac2e62672fdd26"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"f5ee09c66362171b94cc3d183ee242dc3111fed1f3ea292d83fdf25ce7a80a2b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721848871,"tags":[["d","620fb72373b385983563af4f58bebfa7f45c7947ce24e86d018407086f42561a"],["name","bullishNuts Group (Open)"],["about","Public group to chat about the bullishNuts PWA or Cashu in general. "],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/bullishNuts1721848743920_avatar01.png"],["public"],["open"]],"content":"","sig":"739670098aac3e6123d0633b4b8ad79929e9e0a6186713a29c931bdddb5f07c5b848b05d1192986bce4eafca8ff09941c0e8a9eb79c7e008c5665046e8483a47"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"f36d48ed0078b1c7375eaaf3a843441db77bb0798ec12d7c7dcd472084c6b55f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721796169,"tags":[["d","eb58e5e9e20730cfbc8d7ba07f9c03130b5655e64c197fd665a7fd1a872907d1"],["name","xingGroup"],["public"],["open"]],"content":"","sig":"ea0c50d928edf22e478efbbaef8a10b754b243b426d5fe7dc9c379c62b8221e147f9f8f76d21fa94a84a2721b9402dbaab06b4fd160721bddac05507e7208197"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"18c9a96535c60627f6dc3ca7092cdb5d01d4070278badfe9d6218b6a417ebd2e","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["p","da95ee16ab5eb8876cccb7fe71aa6eaa674dd49a531d641727accc7cbbb2a39c"]],"content":"","sig":"081c186c47857a6eee50fe8fa32db162cecf3e1aa5ce81f3151c08c9a0581f2f5d70ec9294f6aa82008424ee8c25a6b2b1ef3d744cec36b358f87ba6ea06ce28"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"2e96a76063ed28139b3f48e32361d5f38c41173c8243f9af171da6868dea9af2","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721818256,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","7adb520c3ac7cb6dc8253508df0ce1d975da49fefda9b5c956744a049d230ace"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"232907d5e2566aa8a240ba14f8daf9a665e3fdbf096373fb6a3332715d147f5fe327dbaf0138155f66295a305a9767092f215c47287ec06e7d575f74e36b7f40"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"e0330a9641a4ec7243a5370df7e3b854fd65d5b93e95dbbf87962666ce47c38a","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393492,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"3a062a37c468fdae822724c660ef91b1f9fe7c4339bf0a02db7f6efd5d25f590f2072b171020a47cca1ba5f5013b3e8ea458f6b432a12f8d146e368ec13a0c69"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"431ccfbdb4d95a9486b7076f045031fe1e5eeb4109353c06855059806bff77db","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722239001,"tags":[["d","444aa85d4dc4ef0bff8ea73639a00cb08bf9f2c7792c1e0e0a1669ea4742bd68"],["name","07291543open"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/test1722237143205_avatar01.png"],["public"],["open"]],"content":"","sig":"ae3047fec4da5abf58102758fd04070d93e15a3988f078a92cb3c2b5a5aa711cba65fdba53dc3feb8e3b366819ab16883f3d8345ebacd8e871a44629295a5851"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"cb450661d6dd4f2225dbf36e57fc88f9b573b6b6f3a044362149e1f1861812bb","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722441386,"tags":[["d","369ef56abb34accda9608f2ed5fd0ebc45ded81a72807a1c34fa063123f74386"],["name","FreedomTechCommunity"],["about","This channel helps people break free from the tyrannical grasps of Big Brother, Silicon Valley and Big Tech."],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/FreedomTechCommunity1722441372066_avatar01.png"],["public"],["open"]],"content":"","sig":"f431dbbc0d375376e7f5336a8ac43bf0e66b39cb2b85d884f4c717f48b20bf9966d7e01796069367a9916e128a4e1f36ba0f84977c277032d9d9d3998e2d6e1b"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"0819d99c672051ecac0a32af4ab3d181c10129511e483a35caeb1a4916038b8f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1723177355,"tags":[["d","d95250c5313d1b564663d08a0d3ba95646017a9062a3625241d06ef6a882c693"],["name","~~"],["about","~~~"],["public"],["open"]],"content":"","sig":"d3933543a36e7d55910d5a1cc6868ab160cc1d41045951caf9525db7322e1f2abaf72a59e59b4175d2ce7db7b4324c7d4fafed97fdb2b5b3cdbc80a2a4e25c8b"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"8cd2f4645df26f1375704e6131ad165106da485cd5024d9fe9b5f03348e83dee","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721960869,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["p","230b561bbf9799dcb978f1e95a36b18a7c6eeafbc661d39f8d138c06e81adcd0"],["p","392d3fcca8e3e924e256625983268608926c9a54e0703c9b3fffae320ad1c86a"]],"content":"","sig":"01a1a1103d2e8117ed26d2033ff0d8a9ce85d4e8d5ead163af184af7560b5afcc0ceb5808f0c90f6f57ac9dd16d521ed77fd07087b09c6c951e1310848973fd9"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"3dfdcfb68bfd4c16d689ce13cd75605ede01c3d8d05a13f10c292c0f44c71bb4","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810707,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["p","2917293266ed003c6c50cd793dfd2da2f12117cad34c033ccaf41137734f9672"],["p","fa984bd7dbb282f07e16e7ae87b26a2a7b9b90b7246a44771f0cf5ae58018f52"],["p","c0cb8a441c0fe698cd6574bb13e9f360adccd800ce411a5fb03d3783d87d4363"]],"content":"","sig":"908907f2ec8888d3e832209b376c817e64e53e70a280c3e07e753ce6b77b8adde11548fc7a4447850032c6022047acfba9fb467ab0aed32ec6f0738574cb8f68"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39002,"id":"34683a74d3a12375f6a48dd4aa9d0567ef91550dd9157a89f07d39cae2baea1f","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["p","ddbfd04c6d2b63ecb17261d372b7b5a6429f453edd7387e72c4b31c6b86a5594"]],"content":"","sig":"15984f49f608de2700d4304bb3448bb39a3e37ea5cf3a4bb585227dd06102df544e41e86a1ba1dccb499002a71b2e1b04dd91241d43f32ec1e3a95b758e54fc6"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["OK","1f552bb6d3a00ff7bdf22f5e26a807dbf28490ac6b7ffd0baaaefc655b85053d",true,""]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"5e4fe29420122b76b6d4fb2da49d3ca7d05bc30861dcbbea890846dd6efba468","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721819044,"tags":[["d","825f1ed57f20d06d43e93f3cb8207d61ce8cdfff9d9f6722540329c00fba1b44"],["name","0xchat Community Group "],["public"],["open"]],"content":"","sig":"5d7c6ec4c8dc8c1d05865934057a441dc92543a385f4d679226ec681e7f3098c3df947bc9bcce239ecc8149bf97f0ec187b0e98f25a0a1f69070d32fc2a5abb3"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"6636f9ed5628d9d5b7394f2f266bf78f7d443dbd6f6a833930a305833adfc09d","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722393493,"tags":[["d","459a821992b3c94c0a849121f2577459965cdad150beab86d5bb0668b2f705ad"],["name","我的小"],["public"],["open"]],"content":"","sig":"dc2838763c0324f851de66aa0e101f0046bc4b8bd5f0c7f914ad6368aa9501f7df53f5851fbf441e518d131bc7750fd665b57e8acd67caa0b1db1384483c96a7"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"6b15742b836d8cc17055a71f859c71799e4472b29059d287553239d5693ed5dc","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721962530,"tags":[["d","f9fde6504448fff7f6ab00a68ef35876e20c3f8ff7f07e4bfd00e3be4c6e5914"],["name","testinggroup001"],["public"],["closed"]],"content":"","sig":"91cbe33326e1041cf24f823ad5bcc5cee00d2d3d3cacdc590df0554032417a604453866f589721353e60d7bab4cbe0d62ef157b440b0b0e23c1a6bfec2110074"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"a3c161f1d1648d5b891577cefe11cec58407ff40d909c977ca0b80e32d0f6fac","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1721810708,"tags":[["d","e41290d8af209549bd5fa2df07f1e5f0b649360b842bf481e2b6f60c1207dfb0"],["name","One Dream"],["picture","https://nostr-chat-bucket.oss-cn-hongkong.aliyuncs.com/images/One Dream1721810692720_avatar01.png"],["public"],["open"]],"content":"","sig":"616dd5e5cb8d7b086539f5e053ee456be3b3d0e87ec74735259530566d9ec69622d48794c6860833aa0d35beee385319cfca87c8bdeaaf2f05963041997caf02"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EVENT","ACDf4E9872aEee57EfCFF1466dcA5fA9",{"kind":39000,"id":"1354ac354d36fb009209096b5d93ba4ca24bc5683db24a9596c79c333c6da53b","pubkey":"ad98dd84852786e33eb0651878eb835b242d25f7c0255e6e5a745bf7b6be15c8","created_at":1722409389,"tags":[["d","44dd52e8658b6a502f57916c2919fcbd05bf06b9e8a0a5ff1006e1f190032f95"],["name","看吧"],["public"],["open"]],"content":"","sig":"b6c04a55b33a11af14dfca261e73862493967230c1fe3cbabf328367f1266b8aa5848604c1c1977b7a9cc12ac638c819e96b8e697fef8b919b3c01c862579171"}]
+
+
+3:39PM DBG Received message from wss://groups.0xchat.com: message:["EOSE","ACDf4E9872aEee57EfCFF1466dcA5fA9"]
+
+
