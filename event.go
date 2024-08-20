@@ -83,7 +83,6 @@ func (e *Event) ToEventString() (string, error) {
 		return "", err
 	}
 
-	// 输出结果
 	return string(resultJSON), nil
 }
 
@@ -95,6 +94,5 @@ func (e *Event) ToAuthString() (string, error) {
 		return "", err
 	}
 
-	// 输出结果
 	return string(resultJSON), nil
 }
