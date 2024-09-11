@@ -37,17 +37,29 @@ func (m *MessageBean) SetNotification(notification *NotificationBean) *MessageBe
 }
 
 func sendPush(deviceToken string, messageBean *MessageBean) {
-	log.Printf("before to start send!, url: %s, message: %s", deviceToken, ToJSON(messageBean))
-	if strings.Contains(strings.ToLower(deviceToken), "embedded-fcm/fcm") {
-		deviceToken = "https://www.0xchat.com" + deviceToken[strings.Index(deviceToken, "/FCM"):]
-
-		result, err := DoPost(deviceToken, messageBean)
-		if err != nil {
-			log.Printf("Failed to send message: %v", err)
-		} else {
-			log.Printf("sent message result: %s", result)
-		}
+	if deviceToken == "" {
+		return
 	}
+
+	log.Printf("before to start send!, url: %s, message: %s", deviceToken, ToJSON(messageBean))
+
+	callUrl := deviceToken
+
+	if strings.Contains(strings.ToLower(deviceToken), "embedded-fcm/fcm") {
+		callUrl = "https://www.0xchat.com" + deviceToken[strings.Index(deviceToken, "/FCM"):]
+	}
+
+	if strings.Contains(strings.ToLower(deviceToken), "ntfy") || strings.Contains(strings.ToLower(deviceToken), "conversations") {
+		callUrl = deviceToken
+	}
+
+	response, statusCode, err := HttpClient.Post(callUrl, nil, messageBean)
+	if err != nil {
+		log.Println("Error:", err)
+		return
+	}
+
+	log.Printf("Status Code: %d, Response Body: %s\n", statusCode, response)
 }
 
 func PushAndroid(deviceId, title, message string, isCallPush bool, groupId string) {

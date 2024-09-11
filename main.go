@@ -2,6 +2,7 @@ package main
 
 import (
 	"os"
+	"time"
 )
 
 func init() {
@@ -9,6 +10,13 @@ func init() {
 	groupRelayChannel = make(chan HanlderEventInfo, 100)
 	monentChannel = make(chan HanlderEventInfo, 64)
 	inviteToGroupChannel = make(chan HanlderEventInfo, 64)
+
+	// 创建 HTTP 客户端
+	HttpClient = NewHTTPClient(HTTPClientConfig{
+		Timeout:         10 * time.Second,
+		MaxIdleConns:    100,
+		IdleConnTimeout: 90 * time.Second,
+	})
 }
 
 func main() {

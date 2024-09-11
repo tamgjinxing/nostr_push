@@ -19,7 +19,8 @@ var (
 	clients []*WebSocketClient
 
 	clientsMap = make(map[string]*WebSocketClient)
-	mu         sync.RWMutex
+
+	mu sync.RWMutex
 
 	needMonitorRelays []string
 
@@ -63,6 +64,8 @@ var (
 	MonmentChannelKinds = []int{
 		nostr.KindTextNote,
 		nostr.KindReaction}
+
+	HttpClient *HTTPClient
 )
 
 const (

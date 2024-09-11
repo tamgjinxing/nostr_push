@@ -11,7 +11,6 @@ import (
 	"github.com/nbd-wtf/go-nostr"
 )
 
-// NewWebSocketClient 创建新的 WebSocketClient 实例并连接到 WebSocket 服务
 func NewWebSocketClient(monitorRelayInfo *MonitoringRelaysInfo) (*WebSocketClient, error) {
 	conn, _, err := websocket.DefaultDialer.Dial(monitorRelayInfo.RelayUrl, nil)
 	if err != nil {
@@ -41,7 +40,7 @@ func (c *WebSocketClient) ReceiveMessage() {
 		if err != nil {
 			return
 		}
-		c.HandlerMessage(message)
+		go c.HandlerMessage(message)
 	}
 }
 

@@ -43,7 +43,6 @@ type IosPushInitDTO struct {
 
 func GetDeviceInfoByToken(deviceToken string) IosPushInitDTO {
 	var iosPushInitDTO IosPushInitDTO
-	// 使用 for range 语句遍历 map 并删除满足条件的元素
 	for key := range clientMap {
 		if strings.HasPrefix(deviceToken, key) {
 			iosPushInitDTO.DeviceToken = deviceToken[len(key):]

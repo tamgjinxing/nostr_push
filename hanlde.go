@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"slices"
 	"sort"
-	"sync"
+	"strings"
 
 	"github.com/nbd-wtf/go-nostr"
 )
@@ -17,9 +17,9 @@ func HandleEvent(events chan HanlderEventInfo) {
 			if ev.Event != nil {
 				switch ev.Event.Kind {
 				case nostr.KindChannelMessage:
-					ChannelPush(ev.Event)
+					go ChannelPush(ev.Event)
 				case PrivateMsgPushKind:
-					PrivatePush(ev.Event)
+					go PrivatePush(ev.Event)
 				}
 			}
 		}
@@ -33,15 +33,15 @@ func HandleGroupRelayEvent(events chan HanlderEventInfo) {
 			if ev.Event != nil {
 				switch ev.Event.Kind {
 				case nostr.KindSimpleGroupChatMessage:
-					PublicGroupPush(ev.Event)
+					go PublicGroupPush(ev.Event)
 				case nostr.KindSimpleGroupThread:
-					PublicGroupPush(ev.Event)
+					go PublicGroupPush(ev.Event)
 				case nostr.KindSimpleGroupReply:
-					PublicGroupPush(ev.Event)
+					go PublicGroupPush(ev.Event)
 				case nostr.KindSimpleGroupMetadata:
-					SaveGroupRelayGroupInfo(ev.Event)
+					go SaveGroupRelayGroupInfo(ev.Event)
 				case nostr.KindSimpleGroupMembers:
-					SaveGroupRelayGroupMembers(ev.Event)
+					go SaveGroupRelayGroupMembers(ev.Event)
 				}
 			}
 		}
@@ -55,9 +55,9 @@ func MonmentEvent(events chan HanlderEventInfo) {
 			if ev.Event != nil {
 				switch ev.Event.Kind {
 				case nostr.KindTextNote:
-					MonmentPush(ev.Event)
+					go MonmentPush(ev.Event)
 				case nostr.KindReaction:
-					MonmentPush(ev.Event)
+					go MonmentPush(ev.Event)
 				}
 			}
 		}
@@ -71,7 +71,7 @@ func InviteToGroupEvent(events chan HanlderEventInfo) {
 			if ev.Event != nil {
 				switch ev.Event.Kind {
 				case 9000:
-					InviteToGroupHandler(ev)
+					go InviteToGroupHandler(ev)
 				}
 			}
 		}
@@ -168,9 +168,7 @@ func ChannelPush(event *nostr.Event) {
 		channelInfo, _ := GetChannelInfoFromRedis(groupId)
 		members, _ := GetMembersFromRedis(groupId)
 		userInfo4Cache, _ := GetUserInfo4Cache(event.PubKey)
-		var wg sync.WaitGroup
 		for _, value := range members {
-			wg.Add(1)
 			// message sender is no need push
 			if event.PubKey == value.UserPubKey {
 				continue
@@ -189,9 +187,9 @@ func ChannelPush(event *nostr.Event) {
 				groupFound := StringInSlice(userInfo.ETags, groupId)
 				if found && groupFound {
 					if channelInfo != nil {
-						go SendMessageToMember(userInfo, channelInfo.ChannelName, event.Content, &wg, event.ID, sendName)
+						go SendMessageToMember(userInfo, channelInfo.ChannelName, event.Content, event.ID, sendName)
 					} else {
-						go SendMessageToMember(userInfo, "", event.Content, &wg, event.ID, sendName)
+						go SendMessageToMember(userInfo, "", event.Content, event.ID, sendName)
 					}
 				}
 			}
@@ -249,7 +247,7 @@ func PrivatePush(event *nostr.Event) {
 					defaultMsg = Default_call_msg
 				}
 
-				pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, defaultMsg, userInfo.DeviceId, Default_push_title, isCallPush, "")
+				go pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, defaultMsg, userInfo.DeviceId, Default_push_title, isCallPush, "")
 			}
 		}
 	}
@@ -303,7 +301,7 @@ func PublicGroupPush(event *nostr.Event) {
 							title = Default_push_title
 						}
 
-						pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, groupId)
+						go pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, groupId)
 					}
 				}
 			}
@@ -356,7 +354,7 @@ func MonmentPush(event *nostr.Event) {
 			_, match := slices.BinarySearch(userInfo.Kinds, event.Kind)
 			if match {
 				if userInfo.Online == 0 && userInfo.DeviceId != "" {
-					pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, sendMsg, userInfo.DeviceId, "0xchat", false, "")
+					go pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, sendMsg, userInfo.DeviceId, "0xchat", false, "")
 				}
 			}
 		}
@@ -406,8 +404,7 @@ func InviteToGroupHandler(handleEventInfo HanlderEventInfo) {
 	}
 }
 
-func SendMessageToMember(userInfo *UserInfoDTO, groupName string, message string, wg *sync.WaitGroup, eventId string, sendName string) {
-	defer wg.Done()
+func SendMessageToMember(userInfo *UserInfoDTO, groupName string, message string, eventId string, sendName string) {
 	if userInfo.Online == 0 && userInfo.DeviceId != "" {
 
 		if sendName != "" {
@@ -420,13 +417,13 @@ func SendMessageToMember(userInfo *UserInfoDTO, groupName string, message string
 			title = "0xchat"
 		}
 
-		pushManager.PushMessage(eventId+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, "")
+		go pushManager.PushMessage(eventId+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, "")
 	}
 }
 
 func StringInSlice(list []string, a string) bool {
 	for _, b := range list {
-		if b == a {
+		if strings.Contains(b, a) {
 			return true
 		}
 	}
