@@ -17,7 +17,7 @@ func HandleEvent(events chan HanlderEventInfo) {
 			if ev.Event != nil {
 				switch ev.Event.Kind {
 				case nostr.KindChannelMessage:
-					go ChannelPush(ev.Event)
+					go ChannelPush2(ev.Event)
 				case PrivateMsgPushKind:
 					go PrivatePush(ev.Event)
 				}
@@ -101,7 +101,7 @@ func SaveGroupRelayGroupMembers(event *nostr.Event) {
 	}
 
 	if groupId != "" {
-		go PutGroupRelayGroupMembersToRedis(groupId, members)
+		PutGroupRelayGroupMembersToRedis(groupId, members)
 	}
 }
 
@@ -146,7 +146,7 @@ func SaveGroupRelayGroupInfo(event *nostr.Event) {
 	}
 
 	if groupId != "" {
-		go PutGroupRelayGroupInfoToRedis(groupInfo)
+		PutGroupRelayGroupInfoToRedis(groupInfo)
 	}
 }
 
@@ -274,7 +274,6 @@ func PublicGroupPush(event *nostr.Event) {
 		}
 
 		for _, member := range members {
-			log.Println(member)
 			if member == event.PubKey {
 				log.Printf("The event is send by self,is no need push. pubkey=:%s", member)
 				continue
@@ -343,11 +342,11 @@ func MonmentPush(event *nostr.Event) {
 	toPubkeys = RemoveDuplicates(toPubkeys)
 	for _, toPubkey := range toPubkeys {
 		if toPubkey == event.PubKey {
-			log.Printf("The person being replied to is the same as the person replying, no need to push a notification.")
+			// log.Printf("The person being replied to is the same as the person replying, no need to push a notification.")
 			continue
 		}
 
-		log.Printf("The person being replied to is the user who needs to receive a notification. pubkey:%s\n", toPubkey)
+		// log.Printf("The person being replied to is the user who needs to receive a notification. pubkey:%s\n", toPubkey)
 		userInfo := GetUserInfoFromRedis(toPubkey)
 		if userInfo != nil {
 			sort.Ints(userInfo.Kinds)
@@ -380,7 +379,6 @@ func InviteToGroupHandler(handleEventInfo HanlderEventInfo) {
 				}
 			}
 		}
-		log.Println(invitedPubKeys)
 		for _, invitedPubKey := range invitedPubKeys {
 			if invitedPubKey == config.PushBotInfo.PublicKey {
 				client := handleEventInfo.Client
