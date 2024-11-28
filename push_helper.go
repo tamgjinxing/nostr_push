@@ -23,7 +23,7 @@ func (a *AndroidPusher) Push(message string, deviceID string, title string, isCa
 type IOSPusher struct{}
 
 func (i *IOSPusher) Push(message string, deviceID string, title string, isCallPush bool, groupId string) error {
-	PushIos(deviceID, title, message)
+	PushIos(deviceID, title, message, isCallPush, groupId)
 	return nil
 }
 

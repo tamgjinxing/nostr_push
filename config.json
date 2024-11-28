@@ -1,8 +1,9 @@
 {
     "IosPushInfo":{
-        "BundleIds":"com.0xchat.app",
-        "P12Pathes":"0xchat_push.p12",
-        "Passwords":""
+        "BundleIds":"com.0xchat.app,com.zhw.IAPProduct",
+        "P12Pathes":"0xchat_push.p12,aps.p12",
+        "Passwords":"'',''",
+        "PushEnv": "pro,dev"
     },
     "Redis": {
         "address": "127.0.0.1:6379",

@@ -10,6 +10,7 @@ type Config struct {
 		BundleIds string `json:"bundleIds"`
 		P12Pathes string `json:"p12Pathes"`
 		Passwords string `json:"passwords"`
+		PushEnv   string `json:"pushEnv"`
 	} `json:"IosPushInfo"`
 
 	Redis struct {

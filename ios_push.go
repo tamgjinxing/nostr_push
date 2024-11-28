@@ -14,25 +14,34 @@ func InitClientMap() {
 	bundleIds := config.IOSPushInfo.BundleIds
 	p12paths := config.IOSPushInfo.P12Pathes
 	passwords := config.IOSPushInfo.Passwords
+	pushEnvs := config.IOSPushInfo.PushEnv
 
 	bundleArr := strings.Split(bundleIds, ",")
 	p12Arr := strings.Split(p12paths, ",")
 	passwordArr := strings.Split(passwords, ",")
+	pushEnvArr := strings.Split(pushEnvs, ",")
 
 	for i := 0; i < len(bundleArr); i++ {
-		AddClient(bundleArr[i], p12Arr[i], passwordArr[i])
+		AddClient(bundleArr[i], p12Arr[i], passwordArr[i], pushEnvArr[i])
 	}
 	log.Println("Init APNS Client Successful!!!")
 }
 
 // AddClient adds a new APNs client to the map
-func AddClient(name string, certFile string, password string) error {
+func AddClient(name string, certFile string, password string, pushEnv string) error {
 	cert, err := certificate.FromP12File(certFile, password)
 	if err != nil {
 		return err
 	}
-	client := apns2.NewClient(cert).Production()
-	clientMap[name] = client
+
+	if strings.ToLower(pushEnv) == "pro" {
+		client := apns2.NewClient(cert).Production()
+		clientMap[name] = client
+	} else {
+		client := apns2.NewClient(cert).Development()
+		clientMap[name] = client
+	}
+
 	return nil
 }
 
@@ -54,7 +63,7 @@ func GetDeviceInfoByToken(deviceToken string) IosPushInitDTO {
 }
 
 // Push sends a notification to the specified device tokens using the specified client
-func PushIos(deviceToken string, title, message string) error {
+func PushIos(deviceToken string, title, message string, isCallPush bool, groupId string) error {
 	iosPushInitDTO := GetDeviceInfoByToken(deviceToken)
 	client, exists := clientMap[iosPushInitDTO.BundleId]
 	if !exists {
@@ -63,7 +72,13 @@ func PushIos(deviceToken string, title, message string) error {
 
 	notification := &apns2.Notification{}
 	notification.Topic = iosPushInitDTO.BundleId
-	notification.Payload = payload.NewPayload().AlertTitle(title).AlertBody(message).Badge(1)
+
+	if isCallPush {
+		notification.Payload = payload.NewPayload().AlertTitle(title).AlertBody(message).Badge(1).Sound("calling.wav")
+	} else {
+		notification.Payload = payload.NewPayload().AlertTitle(title).AlertBody(message).Badge(1)
+	}
+
 	notification.DeviceToken = iosPushInitDTO.DeviceToken
 
 	res, err := client.Push(notification)

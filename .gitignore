@@ -1,2 +1,3 @@
 nostr_push
 config.json
+*.p12
