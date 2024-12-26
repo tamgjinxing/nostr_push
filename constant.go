@@ -32,7 +32,7 @@ var (
 
 	// normal relay:
 	Oxchat_subscribeKinds = []SubKindsLimit{
-		{SubscribeKinds: []int{1059, 42, 7, 1}, Limit: 0},
+		{SubscribeKinds: []int{1059, 42, 7, 1, 9735}, Limit: 0},
 	}
 )
 

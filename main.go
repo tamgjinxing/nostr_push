@@ -62,7 +62,7 @@ func main() {
 	if isTest {
 		relays = []MonitoringRelaysInfo{
 			// {RelayUrl: "wss://relay.0xchat.com", SubKindsLimits: Oxchat_subscribeKinds, GroupRelayFlag: false},
-			{RelayUrl: "ws://192.168.1.24:6978", SubKindsLimits: Oxchat_subscribeKinds, GroupRelayFlag: false},
+			{RelayUrl: "ws://127.0.0.1:6970", SubKindsLimits: Oxchat_subscribeKinds, GroupRelayFlag: false},
 		}
 	} else {
 		needMonitorRelays := GetMonitorChatRelays(config.TopInfo.TopN)

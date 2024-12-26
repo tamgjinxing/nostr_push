@@ -1,9 +1,11 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"slices"
 	"sort"
+	"strconv"
 	"strings"
 
 	"github.com/nbd-wtf/go-nostr"
@@ -20,6 +22,8 @@ func HandleEvent(events chan HanlderEventInfo) {
 					go ChannelPush2(ev.Event)
 				case PrivateMsgPushKind:
 					go PrivatePush(ev.Event)
+				case nostr.KindZap:
+					go HandleZapRequest(ev.Event)
 				}
 			}
 		}
@@ -416,6 +420,80 @@ func SendMessageToMember(userInfo *UserInfoDTO, groupName string, message string
 		}
 
 		go pushManager.PushMessage(eventId+"_"+userInfo.PublicKey, message, userInfo.DeviceId, title, false, "")
+	}
+}
+
+func HandleZapRequest(event *nostr.Event) {
+	tags := event.Tags
+
+	var zapperPubkey = ""
+	var receiverPubkey = ""
+	var description = ""
+
+	for _, tag := range tags {
+		if len(tag) >= 2 {
+			if tag[0] == "p" {
+				receiverPubkey = tag[1]
+			}
+
+			if tag[0] == "P" {
+				zapperPubkey = tag[1]
+			}
+
+			if tag[0] == "description" {
+				description = tag[1]
+			}
+		}
+	}
+
+	var data map[string]interface{}
+	if description != "" {
+		err := json.Unmarshal([]byte(description), &data)
+		if err != nil {
+			fmt.Println("error", err)
+			return
+		}
+	}
+
+	fmt.Println(zapperPubkey)
+	fmt.Println(receiverPubkey)
+	fmt.Println(data["tags"])
+
+	tags2 := data["tags"]
+	tags3 := tags2.([]interface{}) // tags 是一个数组
+
+	var amount []interface{}
+
+	for _, tempTag := range tags3 {
+		tagPair := tempTag.([]interface{}) // 每个 tag 是一个数组
+
+		if tagPair[0].(string) == "amount" {
+			amount = tagPair[1:]
+			break
+		}
+	}
+
+	stringAmount := amount[0].(string)
+	intAmount, err := strconv.Atoi(stringAmount)
+	if err != nil {
+		// 如果转换出错，输出错误信息
+		fmt.Println("转换失败:", err)
+	} else {
+		// 转换成功，输出结果
+		fmt.Println("转换成功，值为:", intAmount)
+	}
+	realAmountSAT := intAmount / 1000
+
+	sendMsg := fmt.Sprintf("Zap +%d SATs", realAmountSAT)
+
+	userInfo := GetUserInfoFromRedis(receiverPubkey)
+	if userInfo != nil {
+		match := AnyMatch(PRIVATE_MSG_PUSH_KINDS, userInfo.Kinds)
+		if match {
+			if userInfo.Online == 0 && userInfo.DeviceId != "" {
+				go pushManager.PushMessage(event.ID+"_"+userInfo.PublicKey, sendMsg, userInfo.DeviceId, Default_push_title, false, "")
+			}
+		}
 	}
 }
 
